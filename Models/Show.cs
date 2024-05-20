@@ -4,6 +4,7 @@
     {
         public int Id { get; set; }
         public int PromotionId { get; set; }
+        public Promotion? Promotion { get; set; }
         public string ShowName { get; set; }
         public string ShowImage { get; set; }
         public string Location { get; set; }
