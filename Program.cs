@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 using IndieWorld;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http.Json;
-using IndieWorld.API;
+using IndieWorld.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -48,5 +48,6 @@ app.MapControllers();
 UserApi.Map(app);
 PromotionApi.Map(app);
 ShowApi.Map(app);
+PerformerApi.Map(app);
 
 app.Run();
