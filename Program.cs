@@ -49,5 +49,6 @@ UserApi.Map(app);
 PromotionApi.Map(app);
 ShowApi.Map(app);
 PerformerApi.Map(app);
+RoleApi.Map(app);
 
 app.Run();
