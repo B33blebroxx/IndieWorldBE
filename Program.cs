@@ -46,5 +46,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 UserApi.Map(app);
+PromotionApi.Map(app);
 
 app.Run();
