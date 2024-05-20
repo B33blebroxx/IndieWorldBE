@@ -1,7 +1,7 @@
 ﻿using IndieWorld.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace IndieWorld.API
+namespace IndieWorld.Controllers
 {
     public class PromotionApi
     {
@@ -61,13 +61,13 @@ namespace IndieWorld.API
                 return Results.Ok(new
                 {
                     PromotionId = promotion.Id,
-                    PromotionName = promotion.PromotionName,
-                    Acronym = promotion.Acronym,
-                    LogoUrl = promotion.LogoUrl,
-                    Hq = promotion.Hq,
-                    Established = promotion.Established,
-                    Owner = promotion.Owner,
-                    ShowFrequency = promotion.ShowFrequency,
+                    promotion.PromotionName,
+                    promotion.Acronym,
+                    promotion.LogoUrl,
+                    promotion.Hq,
+                    promotion.Established,
+                    promotion.Owner,
+                    promotion.ShowFrequency,
                     Shows = sortedShows.Select(s => new
                     {
                         s.Id,

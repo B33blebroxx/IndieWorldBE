@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using IndieWorld.Models;
 
-namespace IndieWorld.API
+namespace IndieWorld.Controllers
 {
     public class UserApi
     {
