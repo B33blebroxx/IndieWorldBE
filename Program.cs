@@ -47,5 +47,6 @@ app.MapControllers();
 
 UserApi.Map(app);
 PromotionApi.Map(app);
+ShowApi.Map(app);
 
 app.Run();
