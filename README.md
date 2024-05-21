@@ -13,6 +13,7 @@ Indie World is a platform that centralizes information for indie wrestling promo
 
 Before you begin, ensure you have the following installed:
 
+- [Visual Studio](https://visualstudio.microsoft.com/downloads)
 - [.NET 8.0](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/)
 - [PostgreSQL](https://www.postgresql.org/download/)
