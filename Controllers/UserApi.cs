@@ -34,6 +34,31 @@ namespace IndieWorld.Controllers
                     return Results.BadRequest("Unable to register user");
                 }
             });
+
+            //Update User
+            app.MapPut("/users/update/{id}", (IndieWorldDbContext db, int id, User updatedUser) =>
+            {
+                var user = db.Users.Find(id);
+
+                if (user == null)
+                {
+                    return Results.NotFound("");
+                }
+                if (updatedUser.PromotionId != null)
+                {
+                    user.PromotionId = updatedUser.PromotionId;
+                }
+
+                if (updatedUser.PerformerId != null)
+                {
+                    user.PerformerId = updatedUser.PerformerId;
+                }
+
+                db.SaveChanges();
+
+                return Results.Ok(user);
+            });
+
         }
     }
 }
