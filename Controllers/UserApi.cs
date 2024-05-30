@@ -59,6 +59,19 @@ namespace IndieWorld.Controllers
                 return Results.Ok(user);
             });
 
+            //Get User
+            app.MapGet("/users/{id}", (IndieWorldDbContext db, int id) =>
+            {
+                var user = db.Users.Find(id);
+
+                if (user == null)
+                {
+                    return Results.NotFound("");
+                }
+
+                return Results.Ok(user);
+            });
+
         }
     }
 }
