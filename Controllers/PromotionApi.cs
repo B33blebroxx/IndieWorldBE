@@ -83,7 +83,18 @@ namespace IndieWorld.Controllers
                 });
             });
 
+            //Get Promotion
+            app.MapGet("/promotions/{id}", (IndieWorldDbContext db, int id) =>
+            {
+                var promotion = db.Promotions.Find(id);
 
+                if (promotion == null)
+                {
+                    return Results.NotFound("");
+                }
+
+                return Results.Ok(promotion);
+            });
         }
     }
 };
