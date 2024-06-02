@@ -61,7 +61,7 @@ namespace IndieWorld.Controllers
                 var sortedShows = promotion.Shows.OrderBy(s => s.ShowName).ToList();
                 return Results.Ok(new
                 {
-                    promotionId = promotion.Id,
+                    id = promotion.Id,
                     promotionName = promotion.PromotionName,
                     acronym = promotion.Acronym,
                     description = promotion.Description,
