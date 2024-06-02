@@ -5,7 +5,8 @@
         public int Id { get; set; }
         public string? PromotionName { get; set; }
         public string? Acronym { get; set; }
-        public string? LogoUrl { get; set; }
+        public string? Description { get; set; }
+        public string? Logo { get; set; }
         public string? Hq { get; set; }
         public int Established { get; set; }
         public string? Owner { get; set; }
