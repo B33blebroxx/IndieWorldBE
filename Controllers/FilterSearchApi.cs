@@ -13,7 +13,7 @@ namespace IndieWorld.Controllers
                     .Where(s => EF.Functions.ILike(s.ShowName, $"%{query}%"))
                     .Select(s => new
                     {
-                        ShowId = s.Id,
+                        Id = s.Id,
                         ShowName = s.ShowName,
                         ShowImage = s.ShowImage,
                         Location = s.Location,
