@@ -67,8 +67,9 @@ namespace IndieWorld.Controllers
                     {
                         PromotionId = p.Id,
                         PromotionName = p.PromotionName,
+                        Description = p.Description,
                         Acronym = p.Acronym,
-                        LogoUrl = p.LogoUrl,
+                        Logo = p.Logo,
                         Hq = p.Hq,
                         Established = p.Established,
                         Owner = p.Owner,

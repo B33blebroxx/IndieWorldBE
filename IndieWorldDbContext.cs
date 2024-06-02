@@ -51,11 +51,61 @@ public class IndieWorldDbContext : DbContext
 
         modelBuilder.Entity<Promotion>().HasData(new Promotion[]
         {
-            new Promotion { Id = 1, PromotionName = "Off Center Wrestling", Acronym = "OCW", LogoUrl = "https://c8.alamy.com/comp/2RGT030/ocw-letter-logo-design-with-polygon-shape-ocw-polygon-and-cube-shape-logo-design-ocw-hexagon-vector-logo-template-white-and-black-colors-ocw-monogr-2RGT030.jpg", Hq = "Nashville, TN", Established = 2020, Owner = "Jeremy Lee", ShowFrequency = "Twice Monthly" },
-            new Promotion { Id = 2, PromotionName = "Game Changer Wrestling", Acronym = "GCW", LogoUrl = "https://upload.wikimedia.org/wikipedia/commons/c/cc/Game_Changer_Wrestling_Logo_%28black%29.png", Hq = "New Jersey", Established = 1999, Owner = "Brett Lauderdale", ShowFrequency = "Twice Monthly" },
-            new Promotion { Id = 3, PromotionName = "Combat Zone Wrestling", Acronym = "CZW", LogoUrl = "https://static.iwtv.live/media/promotions/January2018/ebQhMN1hKqz1WHsVaDX5-medium.jpg", Hq = "Philadelphia, PA", Established = 1999, Owner = "D.J. Hyde", ShowFrequency = "Weekly" },
-            new Promotion { Id = 4, PromotionName = "Pro Wrestling Guerilla", Acronym = "PWG", LogoUrl = "https://mir-s3-cdn-cf.behance.net/projects/404/9beb1335792767.Y3JvcCwxNTM0LDEyMDEsNjUsMA.jpg", Hq = "Los Angeles, CA", Established = 2003, Owner = "Excalibur, Super Dragon", ShowFrequency = "On Hiatus" },
-            new Promotion { Id = 5, PromotionName = "Beyond Wrestling", Acronym = "Beyond", LogoUrl = "https://upload.wikimedia.org/wikipedia/commons/8/80/Beyond_Wrestling%2C_2016_logo.jpg", Hq = "Worcester, MA", Established = 2009, Owner = "Drew Cordeiro", ShowFrequency = "Weekly" },
+            new Promotion {
+             Id = 1,
+             PromotionName = "Off Center Wrestling",
+             Acronym = "OCW",
+             Description = "Off Center Wrestling is known for its innovative and unconventional approach to professional wrestling, based in Nashville, TN. Established in 2020, OCW quickly made a name for itself with its unique blend of high-energy performances and creative storytelling.",
+             Logo = "https://c8.alamy.com/comp/2RGT030/ocw-letter-logo-design-with-polygon-shape-ocw-polygon-and-cube-shape-logo-design-ocw-hexagon-vector-logo-template-white-and-black-colors-ocw-monogr-2RGT030.jpg",
+             Hq = "Nashville, TN",
+             Established = 2020,
+             Owner = "Jeremy Lee",
+             ShowFrequency = "Twice Monthly"
+           },
+           new Promotion {
+             Id = 2,
+             PromotionName = "Game Changer Wrestling",
+             Acronym = "GCW",
+             Description = "Game Changer Wrestling, founded in 1999, is renowned for its hardcore style and innovative matches. Based in New Jersey, GCW has garnered a cult following due to its willingness to push the boundaries of traditional wrestling.",
+             Logo = "https://upload.wikimedia.org/wikipedia/commons/c/cc/Game_Changer_Wrestling_Logo_%28black%29.png",
+             Hq = "New Jersey",
+             Established = 1999,
+             Owner = "Brett Lauderdale",
+             ShowFrequency = "Twice Monthly"
+           },
+           new Promotion {
+             Id = 3,
+             PromotionName = "Combat Zone Wrestling",
+             Acronym = "CZW",
+             Description = "Combat Zone Wrestling, also known as CZW, is famous for its ultraviolent wrestling style and deathmatch events. Founded in 1999 and based in Philadelphia, PA, CZW is a staple in the hardcore wrestling scene.",
+             Logo = "https://static.iwtv.live/media/promotions/January2018/ebQhMN1hKqz1WHsVaDX5-medium.jpg",
+             Hq = "Philadelphia, PA",
+             Established = 1999,
+             Owner = "D.J. Hyde",
+             ShowFrequency = "Weekly"
+           },
+           new Promotion {
+             Id = 4,
+             PromotionName = "Pro Wrestling Guerilla",
+             Acronym = "PWG",
+             Description = "Pro Wrestling Guerilla, commonly referred to as PWG, is based in Los Angeles, CA, and is known for its high-caliber independent wrestling events. Since its establishment in 2003, PWG has been a launching pad for many top wrestlers in the industry. Currently, PWG is on hiatus.",
+             Logo = "https://mir-s3-cdn-cf.behance.net/projects/404/9beb1335792767.Y3JvcCwxNTM0LDEyMDEsNjUsMA.jpg",
+             Hq = "Los Angeles, CA",
+             Established = 2003,
+             Owner = "Excalibur, Super Dragon",
+             ShowFrequency = "On Hiatus"
+           },
+           new Promotion {
+             Id = 5,
+             PromotionName = "Beyond Wrestling",
+             Acronym = "Beyond",
+             Description = "Beyond Wrestling, established in 2009, is a leading independent wrestling promotion based in Worcester, MA. Known for its unique fan engagement and innovative events, Beyond Wrestling has become a hub for top indie wrestling talent.",
+             Logo = "https://upload.wikimedia.org/wikipedia/commons/8/80/Beyond_Wrestling%2C_2016_logo.jpg",
+             Hq = "Worcester, MA",
+             Established = 2009,
+             Owner = "Drew Cordeiro",
+             ShowFrequency = "Weekly"
+           },
         });
 
         modelBuilder.Entity<Show>().HasData(new Show[]
