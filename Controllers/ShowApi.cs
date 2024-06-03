@@ -140,6 +140,27 @@ namespace IndieWorld.Controllers
                 return Results.Ok(new { Message = "Performer removed from show successfully", ShowId = showId, PerformerId = performerId });
             });
 
+            //Get all Shows
+            app.MapGet("/shows", (IndieWorldDbContext db) =>
+            {
+                var shows = db.Shows
+                    .Select(s => new
+                    {
+                        Id = s.Id,
+                        ShowName = s.ShowName,
+                        ShowImage = s.ShowImage,
+                        Location = s.Location,
+                        ShowDate = s.ShowDate,
+                        ShowTime = s.ShowTime,
+                        Price = s.Price,
+                        ShowComplete = s.ShowComplete
+                    })
+                    .OrderBy(s => s.ShowDate)
+                    .ToList();
+
+                return Results.Ok(shows);
+            });
+
 
 
 
