@@ -18,7 +18,7 @@ namespace IndieWorld.Controllers
             //Get All Performers
             app.MapGet("/performers", (IndieWorldDbContext db) =>
             {
-                var performers = db.Performers.ToList();
+                var performers = db.Performers.Include(p => p.Role).ToList();
                 if (performers == null || performers.Count == 0)
                 {
                     return Results.NotFound("");
