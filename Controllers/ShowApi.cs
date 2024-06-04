@@ -55,7 +55,8 @@ namespace IndieWorld.Controllers
                     .Where(s => s.Id == showId)
                     .Select(s => new
                     {
-                        ShowId = s.Id,
+                        Id = s.Id,
+                        PromotionId = s.PromotionId,
                         ShowName = s.ShowName,
                         ShowImage = s.ShowImage,
                         Location = s.Location,
@@ -65,13 +66,14 @@ namespace IndieWorld.Controllers
                         ShowComplete = s.ShowComplete,
                         Performers = s.Performers.Select(p => new
                         {
-                            PerformerId = p.Id,
+                            Id = p.Id,
                             RingName = p.RingName,
-                            ImageUrl = p.ImageUrl,
+                            Image = p.ImageUrl,
                             Bio = p.Bio,
                             Hometown = p.Hometown,
                             Accolades = p.Accolades,
                             RoleId = p.RoleId,
+                            Role = p.Role.Title,
                             Active = p.Active
                         }).OrderBy(p => p.RingName).ToList()
                     })
