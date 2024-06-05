@@ -18,7 +18,7 @@ namespace IndieWorld.Controllers
             //Get All Performers
             app.MapGet("/performers", (IndieWorldDbContext db) =>
             {
-                var performers = db.Performers.Include(p => p.Role).ToList();
+                var performers = db.Performers.Include(p => p.Role).OrderBy(p => p.RingName).ToList();
                 if (performers == null || performers.Count == 0)
                 {
                     return Results.NotFound("");
@@ -68,7 +68,7 @@ namespace IndieWorld.Controllers
                     .Where(p => p.Id == performerId)
                     .Select(p => new
                     {
-                        PerformerId = p.Id,
+                        Id = p.Id,
                         RingName = p.RingName,
                         Image = p.Image,
                         Bio = p.Bio,
@@ -76,17 +76,20 @@ namespace IndieWorld.Controllers
                         Accolades = p.Accolades,
                         RoleId = p.RoleId,
                         Active = p.Active,
-                        Shows = p.Shows.Select(s => new
-                        {
-                            ShowId = s.Id,
-                            ShowName = s.ShowName,
-                            ShowImage = s.ShowImage,
-                            Location = s.Location,
-                            ShowDate = s.ShowDate,
-                            ShowTime = s.ShowTime,
-                            Price = s.Price,
-                            ShowComplete = s.ShowComplete
-                        }).ToList()
+                        Shows = p.Shows
+                            .OrderBy(s => s.ShowDate)
+                            .Select(s => new
+                            {
+                                Id = s.Id,
+                                ShowName = s.ShowName,
+                                ShowImage = s.ShowImage,
+                                Location = s.Location,
+                                ShowDate = s.ShowDate,
+                                ShowTime = s.ShowTime,
+                                Price = s.Price,
+                                ShowComplete = s.ShowComplete
+                            })
+                            .ToList()
                     })
                     .FirstOrDefault();
 
