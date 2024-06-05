@@ -76,17 +76,20 @@ namespace IndieWorld.Controllers
                         Accolades = p.Accolades,
                         RoleId = p.RoleId,
                         Active = p.Active,
-                        Shows = p.Shows.Select(s => new
-                        {
-                            Id = s.Id,
-                            ShowName = s.ShowName,
-                            ShowImage = s.ShowImage,
-                            Location = s.Location,
-                            ShowDate = s.ShowDate,
-                            ShowTime = s.ShowTime,
-                            Price = s.Price,
-                            ShowComplete = s.ShowComplete
-                        }).ToList()
+                        Shows = p.Shows
+                            .OrderBy(s => s.ShowDate)
+                            .Select(s => new
+                            {
+                                Id = s.Id,
+                                ShowName = s.ShowName,
+                                ShowImage = s.ShowImage,
+                                Location = s.Location,
+                                ShowDate = s.ShowDate,
+                                ShowTime = s.ShowTime,
+                                Price = s.Price,
+                                ShowComplete = s.ShowComplete
+                            })
+                            .ToList()
                     })
                     .FirstOrDefault();
 
