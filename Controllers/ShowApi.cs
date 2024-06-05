@@ -68,7 +68,7 @@ namespace IndieWorld.Controllers
                         {
                             Id = p.Id,
                             RingName = p.RingName,
-                            Image = p.ImageUrl,
+                            Image = p.Image,
                             Bio = p.Bio,
                             Hometown = p.Hometown,
                             Accolades = p.Accolades,
