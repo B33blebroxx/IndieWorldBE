@@ -58,7 +58,7 @@ namespace IndieWorld.Controllers
                     return Results.NotFound("Promotion not found");
                 }
 
-                var sortedShows = promotion.Shows.OrderBy(s => s.ShowName).ToList();
+                var sortedShows = promotion.Shows.OrderBy(s => s.ShowDate).ToList();
                 return Results.Ok(new
                 {
                     id = promotion.Id,

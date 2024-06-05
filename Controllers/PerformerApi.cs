@@ -18,7 +18,7 @@ namespace IndieWorld.Controllers
             //Get All Performers
             app.MapGet("/performers", (IndieWorldDbContext db) =>
             {
-                var performers = db.Performers.Include(p => p.Role).ToList();
+                var performers = db.Performers.Include(p => p.Role).OrderBy(p => p.RingName).ToList();
                 if (performers == null || performers.Count == 0)
                 {
                     return Results.NotFound("");
@@ -68,7 +68,7 @@ namespace IndieWorld.Controllers
                     .Where(p => p.Id == performerId)
                     .Select(p => new
                     {
-                        PerformerId = p.Id,
+                        Id = p.Id,
                         RingName = p.RingName,
                         Image = p.Image,
                         Bio = p.Bio,
@@ -78,7 +78,7 @@ namespace IndieWorld.Controllers
                         Active = p.Active,
                         Shows = p.Shows.Select(s => new
                         {
-                            ShowId = s.Id,
+                            Id = s.Id,
                             ShowName = s.ShowName,
                             ShowImage = s.ShowImage,
                             Location = s.Location,
