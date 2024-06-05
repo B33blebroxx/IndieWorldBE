@@ -41,7 +41,7 @@ namespace IndieWorld.Controllers
                     {
                         PerformerId = p.Id,
                         RingName = p.RingName,
-                        Image = p.Image,
+                        ImageUrl = p.ImageUrl,
                         Bio = p.Bio,
                         Hometown = p.Hometown,
                         Accolades = p.Accolades,
