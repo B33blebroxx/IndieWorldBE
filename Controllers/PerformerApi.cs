@@ -116,6 +116,21 @@ namespace IndieWorld.Controllers
 
                 return Results.Ok(performer);
             });
+
+            //Get a Performer
+            app.MapGet("/performers/{id}", (IndieWorldDbContext db, int id) =>
+            {
+                var performer = db.Performers
+                    .Include(p => p.Role)
+                    .FirstOrDefault(p => p.Id == id);
+
+                if (performer == null)
+                {
+                    return Results.NotFound("Performer not found");
+                }
+
+                return Results.Ok(performer);
+            }); 
         }
     }
 }
