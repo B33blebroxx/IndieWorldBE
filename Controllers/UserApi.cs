@@ -35,30 +35,34 @@ namespace IndieWorld.Controllers
                 }
             });
 
-            //Update User
-            app.MapPut("/users/update/{id}", (IndieWorldDbContext db, int id, User updatedUser) =>
+            //Update User Promotion
+            app.MapPut("/users/{id}/promotion", (IndieWorldDbContext db, int id, User updatedUser) =>
             {
                 var user = db.Users.Find(id);
-
                 if (user == null)
                 {
-                    return Results.NotFound("");
+                    return Results.NotFound("User not found");
                 }
-                if (updatedUser.PromotionId != null)
-                {
-                    user.PromotionId = updatedUser.PromotionId;
-                }
-
-                if (updatedUser.PerformerId != null)
-                {
-                    user.PerformerId = updatedUser.PerformerId;
-                }
+                user.PromotionId = updatedUser.PromotionId;
 
                 db.SaveChanges();
-
                 return Results.Ok(user);
             });
 
+            //Update User Performer
+            app.MapPut("/users/{id}/performer", (IndieWorldDbContext db, int id, User updatedUser) =>
+            {
+                var user = db.Users.Find(id);
+                if (user == null)
+                {
+                    return Results.NotFound("User not found");
+                }
+                user.PerformerId = updatedUser.PerformerId;
+
+                db.SaveChanges();
+                return Results.Ok(user);
+            });
+            
             //Get User
             app.MapGet("/users/{id}", (IndieWorldDbContext db, int id) =>
             {
