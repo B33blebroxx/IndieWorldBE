@@ -52,6 +52,7 @@ namespace IndieWorld.Controllers
             {
                 var show = db.Shows
                     .Include(s => s.Performers)
+                    .ThenInclude(p => p.Role)
                     .Where(s => s.Id == showId)
                     .Select(s => new
                     {
