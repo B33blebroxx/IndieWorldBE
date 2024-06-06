@@ -18,11 +18,27 @@ namespace IndieWorld.Controllers
             //Get All Performers
             app.MapGet("/performers", (IndieWorldDbContext db) =>
             {
-                var performers = db.Performers.Include(p => p.Role).OrderBy(p => p.RingName).ToList();
+                var performers = db.Performers
+                    .Include(p => p.Role)
+                    .OrderBy(p => p.RingName)
+                    .Select(p => new
+                    {
+                        Id = p.Id,
+                        RingName = p.RingName,
+                        Image = p.Image,
+                        Bio = p.Bio,
+                        Hometown = p.Hometown,
+                        Accolades = p.Accolades,
+                        Role = p.Role.Title,
+                        Active = p.Active
+                    })
+                    .ToList();
+
                 if (performers == null || performers.Count == 0)
                 {
                     return Results.NotFound("");
                 }
+
                 return Results.Ok(performers);
             });
 
@@ -39,7 +55,7 @@ namespace IndieWorld.Controllers
                 performer.Image = updatedPerformer.Image;
                 performer.Accolades = updatedPerformer.Accolades;
                 performer.Bio = updatedPerformer.Bio;
-                performer.Role = updatedPerformer.Role;
+                performer.RoleId = updatedPerformer.RoleId;
                 performer.Active = updatedPerformer.Active;
 
                 db.SaveChanges();
@@ -74,7 +90,7 @@ namespace IndieWorld.Controllers
                         Bio = p.Bio,
                         Hometown = p.Hometown,
                         Accolades = p.Accolades,
-                        RoleId = p.RoleId,
+                        Role = p.Role.Title,
                         Active = p.Active,
                         Shows = p.Shows
                             .OrderBy(s => s.ShowDate)
