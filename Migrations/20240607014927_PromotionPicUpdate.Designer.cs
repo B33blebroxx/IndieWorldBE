@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace IndieWorld.Migrations
 {
     [DbContext(typeof(IndieWorldDbContext))]
-    [Migration("20240605165757_ContextUpdate2")]
-    partial class ContextUpdate2
+    [Migration("20240607014927_PromotionPicUpdate")]
+    partial class PromotionPicUpdate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -44,7 +44,7 @@ namespace IndieWorld.Migrations
                     b.Property<string>("Hometown")
                         .HasColumnType("text");
 
-                    b.Property<string>("Image")
+                    b.Property<string>("ImageUrl")
                         .HasColumnType("text");
 
                     b.Property<string>("RingName")
@@ -67,7 +67,7 @@ namespace IndieWorld.Migrations
                             Active = true,
                             Bio = "Nick Gage is a hardcore wrestling legend and the 'God of Ultraviolence'.",
                             Hometown = "Philadelphia, PA",
-                            Image = "https://static.tvtropes.org/pmwiki/pub/images/nickgage_8.jpg",
+                            ImageUrl = "https://static.tvtropes.org/pmwiki/pub/images/nickgage_8.jpg",
                             RingName = "Nick Gage",
                             RoleId = 1
                         },
@@ -78,7 +78,7 @@ namespace IndieWorld.Migrations
                             Active = true,
                             Bio = "Effy is known for his flamboyant style and strong LGBTQ+ representation in wrestling.",
                             Hometown = "Atlanta, GA",
-                            Image = "https://static.wikia.nocookie.net/prowrestling/images/4/49/Effy-new-render.jpg/revision/latest?cb=20200513165511",
+                            ImageUrl = "https://static.wikia.nocookie.net/prowrestling/images/4/49/Effy-new-render.jpg/revision/latest?cb=20200513165511",
                             RingName = "Effy",
                             RoleId = 1
                         },
@@ -89,7 +89,7 @@ namespace IndieWorld.Migrations
                             Active = true,
                             Bio = "Warhorse rules ass and is known for his high-energy performances and headbanging entrance.",
                             Hometown = "St. Louis, MO",
-                            Image = "https://geordiegrapples.wordpress.com/wp-content/uploads/2020/07/9x22sid00aa41-1.jpg?w=819",
+                            ImageUrl = "https://geordiegrapples.wordpress.com/wp-content/uploads/2020/07/9x22sid00aa41-1.jpg?w=819",
                             RingName = "Warhorse",
                             RoleId = 1
                         },
@@ -100,7 +100,7 @@ namespace IndieWorld.Migrations
                             Active = true,
                             Bio = "Allie Katch is a unique and charismatic performer with a love for cats and wrestling.",
                             Hometown = "Austin, TX",
-                            Image = "https://pbs.twimg.com/media/GNpgIsqWMAAVsEE?format=jpg&name=large",
+                            ImageUrl = "https://pbs.twimg.com/media/GNpgIsqWMAAVsEE?format=jpg&name=large",
                             RingName = "Allie Katch",
                             RoleId = 1
                         },
@@ -111,7 +111,7 @@ namespace IndieWorld.Migrations
                             Active = true,
                             Bio = "Danhausen is very nice, very evil, and known for his comedic and spooky character.",
                             Hometown = "Somewhere Evil",
-                            Image = "https://www.theledger.com/gcdn/authoring/2020/03/25/NLED/ghows-LK-1a0f2d17-5797-4fe2-b681-16602adb5422-268ea47f.jpeg",
+                            ImageUrl = "https://www.theledger.com/gcdn/authoring/2020/03/25/NLED/ghows-LK-1a0f2d17-5797-4fe2-b681-16602adb5422-268ea47f.jpeg",
                             RingName = "Danhausen",
                             RoleId = 1
                         },
@@ -122,7 +122,7 @@ namespace IndieWorld.Migrations
                             Active = true,
                             Bio = "Bryce Remsburg is a highly respected referee known for his work in various indie promotions as well as AEW.",
                             Hometown = "West Chester, PA",
-                            Image = "https://pbs.twimg.com/profile_images/1556345586613354498/n1h5JQ9n_400x400.jpg",
+                            ImageUrl = "https://pbs.twimg.com/profile_images/1556345586613354498/n1h5JQ9n_400x400.jpg",
                             RingName = "Bryce Remsburg",
                             RoleId = 3
                         },
@@ -133,7 +133,7 @@ namespace IndieWorld.Migrations
                             Active = true,
                             Bio = "Dave Prazak is a veteran commentator and manager, known for his work with SHIMMER and ROH.",
                             Hometown = "Chicago, IL",
-                            Image = "https://pbs.twimg.com/profile_images/1554102464869277697/xhyyhGjA_400x400.jpg",
+                            ImageUrl = "https://pbs.twimg.com/profile_images/1554102464869277697/xhyyhGjA_400x400.jpg",
                             RingName = "Dave Prazak",
                             RoleId = 8
                         },
@@ -144,7 +144,7 @@ namespace IndieWorld.Migrations
                             Active = true,
                             Bio = "Lenny Leonard is a seasoned commentator known for his work in SHIMMER, ROH and Evolve.",
                             Hometown = "New York, NY",
-                            Image = "https://pbs.twimg.com/media/DywpLT-UwAA0Cm8.jpg",
+                            ImageUrl = "https://pbs.twimg.com/media/DywpLT-UwAA0Cm8.jpg",
                             RingName = "Lenny Leonard",
                             RoleId = 5
                         },
@@ -155,7 +155,7 @@ namespace IndieWorld.Migrations
                             Active = true,
                             Bio = "Veda Scott is a talented wrestler and commentator, known for her sharp insights and in-ring skills.",
                             Hometown = "Providence, RI",
-                            Image = "https://pbs.twimg.com/profile_images/1664115414899539968/mcHJNsIt_400x400.jpg",
+                            ImageUrl = "https://pbs.twimg.com/profile_images/1664115414899539968/mcHJNsIt_400x400.jpg",
                             RingName = "Veda Scott",
                             RoleId = 6
                         },
@@ -166,7 +166,7 @@ namespace IndieWorld.Migrations
                             Active = true,
                             Bio = "Aubrey Edwards is a prominent referee known for her work in AEW and on the indie circuit.",
                             Hometown = "Seattle, WA",
-                            Image = "https://www.gerweck.net/wp-content/uploads/2018/12/Referee-Aubrey-Edwards-122618.jpg",
+                            ImageUrl = "https://www.gerweck.net/wp-content/uploads/2018/12/Referee-Aubrey-Edwards-122618.jpg",
                             RingName = "Aubrey Edwards",
                             RoleId = 3
                         },
@@ -177,7 +177,7 @@ namespace IndieWorld.Migrations
                             Active = true,
                             Bio = "Kevin Gill is a well-known commentator and announcer in the indie wrestling scene.",
                             Hometown = "San Francisco, CA",
-                            Image = "https://pbs.twimg.com/profile_images/1474605422065569802/fSKh_XWy_400x400.jpg",
+                            ImageUrl = "https://pbs.twimg.com/profile_images/1474605422065569802/fSKh_XWy_400x400.jpg",
                             RingName = "Kevin Gill",
                             RoleId = 7
                         },
@@ -188,7 +188,7 @@ namespace IndieWorld.Migrations
                             Active = true,
                             Bio = "Marty Elias is a well-known referee with experience in WWE, AAA, and Lucha Underground.",
                             Hometown = "Los Angeles, CA",
-                            Image = "https://staticg.sportskeeda.com/editor/2021/10/79b9d-16348538759381-1920.jpg",
+                            ImageUrl = "https://staticg.sportskeeda.com/editor/2021/10/79b9d-16348538759381-1920.jpg",
                             RingName = "Marty Elias",
                             RoleId = 3
                         },
@@ -199,7 +199,7 @@ namespace IndieWorld.Migrations
                             Active = true,
                             Bio = "Excalibur is a prominent commentator known for his work in PWG and AEW.",
                             Hometown = "Los Angeles, CA",
-                            Image = "https://upload.wikimedia.org/wikipedia/commons/5/58/Excalibur%2C_May_2023_%28headshot%29.jpg",
+                            ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/5/58/Excalibur%2C_May_2023_%28headshot%29.jpg",
                             RingName = "Excalibur",
                             RoleId = 7
                         },
@@ -210,7 +210,7 @@ namespace IndieWorld.Migrations
                             Active = true,
                             Bio = "Tony Deppen is a versatile and skilled wrestler, known for his work in GCW and ROH.",
                             Hometown = "Hershey, PA",
-                            Image = "https://i1.sndcdn.com/artworks-QUHLSyQ2Mu3ofuB2-eJZDdQ-t500x500.jpg",
+                            ImageUrl = "https://i1.sndcdn.com/artworks-QUHLSyQ2Mu3ofuB2-eJZDdQ-t500x500.jpg",
                             RingName = "Tony Deppen",
                             RoleId = 1
                         },
@@ -221,7 +221,7 @@ namespace IndieWorld.Migrations
                             Active = true,
                             Bio = "Mance Warner is a charismatic brawler known for his southern drawl and hardcore matches.",
                             Hometown = "Buckland, GA",
-                            Image = "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShB8oTStzu84nJURYO3UpaRsyZHOrOKxQLW-zWdEfIcEb5uXAP",
+                            ImageUrl = "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShB8oTStzu84nJURYO3UpaRsyZHOrOKxQLW-zWdEfIcEb5uXAP",
                             RingName = "Mance Warner",
                             RoleId = 1
                         },
@@ -232,7 +232,7 @@ namespace IndieWorld.Migrations
                             Active = true,
                             Bio = "Matt Cardona, formerly known as Zack Ryder in WWE, has reinvented himself on the indie scene.",
                             Hometown = "Long Island, NY",
-                            Image = "https://mattcardona.com/wp-content/uploads/2020/08/bio-pic-matt-cardona-2-683x1024.jpg",
+                            ImageUrl = "https://mattcardona.com/wp-content/uploads/2020/08/bio-pic-matt-cardona-2-683x1024.jpg",
                             RingName = "Matt Cardona",
                             RoleId = 1
                         });
@@ -334,6 +334,150 @@ namespace IndieWorld.Migrations
                             Owner = "Drew Cordeiro",
                             PromotionName = "Beyond Wrestling",
                             ShowFrequency = "Weekly"
+                        });
+                });
+
+            modelBuilder.Entity("IndieWorld.Models.PromotionPic", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("PromotionId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("PromotionImage")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PromotionId");
+
+                    b.ToTable("PromotionPic");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            PromotionId = 1,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAALQSURBVDjLbZNdSFNhGMf/55xtx6P7aG1rbiSbORwpm/QJQeGQPq/SFmiFFZjBQiiF6CboUrxIUqioKIO66SYRQVAiBIkiilJGyJQGrjl1pq42c+ecnfUcEQrdgd/Fed/n/3+e533el2lvbw8riuIiFnp7eytQ4AsGg98kSaqQZfn70NDQ7v/3NCT05HK5F8SVpqamfCEDEqt0Eyc372lIyBNnyF2ytXTLRSwPUc5DVIBW232U6YHmG+81JK4lqjYbsCScIB4SkY/ax0JGSAlssVXIC1YhCr9gEuYEURSniefE+JYKSGgkagnZpP2Kscwn7Ofugs15MbzUgPEVH0TxskzZGwlTIQOJiNKmz84DByx6rIjXkF71Yyl1HJHfNrV/hVBj7FsMaFHcMKg+Ya+AjimGjHJkTEnA+RIKI+GpKGLDYG8hAyNx2m631wzfjBeYAUstiJVqjBpbyOAXMRCNRmXvnYF9Ak1BygEiDbTF+gg79QwOBT5PUpWDFBfcYkDuOtooJ7gP2U7sQSN0U3HYlyfwxWbGm4VpGI1GfTqdrqqvr6/s6+vLJxKJ5Xg83hkOhx9wbre7QxUTvOFoqjTxdgSHtUZcvHAOTqcTBtMO0D0xOBwOVygUEjweD2OxWNTRHiMTrdpCinhFhIqn1uCXqnGkrg4d924hFf4Jp8MBn8+n4zhO19PTg9nZ2ZzBYBhpa2s7NTMzc1VtoYbE5wm3NV6EbXrzem8HLyn5wetphq43zGYzqAUkk0nQe/mj0WjOUkjGZDLxqgFppSc6ne5Z7N0aOPePdYOx26uMIjHo6upCSUnJ+lomkwHLsjxV06/+UwtrjN/vnySDXcSEVqttph5fBwKB0rKyMoUybZ+fn0ckEgHP83C5XKBxgyayFIvF2NHR0Tkmn//3AL1eL0eH5aOM/XSANhJx6kVYXFxsVRNarVY1szabzeboLJJUUcNfnRWk+01xXkAAAAAASUVORK5CYII"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            PromotionId = 1,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHsSURBVDjLtZPpTlpRFIV5Dt7AOESr1kYNThGnSomIihPoNVi5Qp3RgBgvEERpRW1BRBAcMEDUtIkdjKk4otK0Jdr2vgxZ3kA0MYoaG3+cX2evb529zt4sAKz/OawnASgCBNm5LaE7vjVDutkA4mMdLV4TkvcCuvba2Iqd1pDhWA33mQU+2oXVv07YfpoxuNWFuqVXoeqFCnZcgJwRm04p+Gk3Fs9t8PyZx/K5Hfbf03CGLRj62g2+rSR0K0D+vZXUB1Xw/ou5usJWjAaU0Gz3w/rjHey/ZjDLvKTD34KSyXzyBkC2JaYd4feMqyNa3OQTREQePlXjrqSq5ssj5hMjTMd66ALDKDLm0jcA0s+NID6JIFmvQaNXANEKX3l5x7NyqTcb7Zg8GYtCOLoXuPcbha6XV0VlU4WUzE9gPKjF2CGFbE3G3QAmafDnShETF3iKTZyIblcNza4Syi/deD6USscFCJwV6Fwn8NonQak5Hy1L9TAcjkJ/oAG1p0a1hYdnfcnkrQCBoxyyNYLp1YCJoB7GIwqGgxGod/oZsQoNDiHSepNCceeAN8uF1CvGxJE25rofc+3blKPqQ2VUnKxIYN85yty3eWh216LeKUTOSCayVGlIH0g5S+1JJB+8Cxxt1rWkH7WNTNIPAlwA9Gm7OcXUHxUAAAAASUVORK5CYII="
+                        },
+                        new
+                        {
+                            Id = 3,
+                            PromotionId = 1,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGeSURBVDjLvZPPK4NxHMe/F4dFymE8hx2YpEn+gWcHR20au4gdbCcnu3l6TqL8yO9oYSJmYbNSFsraZCSlbHJANEabaZtFYUzW29cOojzyK4f37ft6vz71/XwIAPKbkD8r4Hkeb6PX66HVaqFSqSCXyyGTycAwDLKyJchk8vGjCTTjATHNPk2MpujDCT4zl7etot8ZwYDjAuqBg6ii01v0LXMfBV27McxthMGbDsByTvvrI2rmqJmjZo6aOWrmqJnLkZY0V/Rsh7uXgim4w+bH+PI5ajs3UayzTgtaEy7C+BfztHZLzeWw3f0O1rSsoaB6wpVbaRQJwcoHN4N7jxoJXxdi8+mw2EZTcFXTCijokigNIsFfiC8T9QucvFlHMjKCRNCK0Ewa+NZuUPAVFiy4XSKauEeDp8ggnk50SEbNuNqqR2OD4ugtLFhwbSd1t9463JyZ8BgYwZ1vAmFHGbyGDNWXVjk2R4YOF0oRXShEYJLsnI4R87GR9O71EbFgAcuyszRrcpZdt7VLE6EpMhYwkcJvH1PYSsQUFv/bNT4D22mzuYC6IhwAAAAASUVORK5CYII="
+                        },
+                        new
+                        {
+                            Id = 4,
+                            PromotionId = 1,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIiSURBVDjLpdNdSFNhGAdw6baL7qUuuonA6Cojoiw6qwth0VUsDIxKggohIXGtpA+1DxQhwoltsXKjNpbruC9q5jypMwf2sdlqbc120ixzfqzV8Lhz/r3vWRw0yAt38eeF857nx/McnlMEoKiQ/Pei5ayluP2YnzUdeZd8XpMWzef4hRtV24zXNRtA4iQpXxGwMvPSgFbEzHsJU6+BoTrgUVUIi9lZ+Bq2y4gM3DplWePdK3R59giCu0yAk4TdLeCjXUI6CWRTQJoH5hJAn8sEvqcJ5pqtFDguAy0nrGtd+3L9Yy5gzAt8Iue3IJCKAJMvSWEc+BoAvvgBfXUpxrlWtFZupECxDNyp9GxyqMQQBQIXgUEdEDHlsR9hYJpkYpA8M4uwa0sRc1TTYigf0aAJHGLV4BNuMmc9yRXy8n0g6QNmoqSLYQL0A7GeDPqaGQJfWg48PBhrjNowP2oEgg0kTQTozLecmQS+j+S7eOVNImy8gKHbBygwqgDdqp/dCSdytHWuFggbAL4XmHpDxnBLIqfL/uZqc4v+q7N429aJJ/U7KXBNATxMbjj+GPj8jOQpaXcA8J0UYVNlJPZ8fCRqFTVcY+peyfrNCLVr0XG6hAJlCtBx9MVdm5r/5WAyUheTlizlEwv6Ci6wdCdIAWM4swWRB4eXzb/iIv0D3GQv7yoI+BDUqwsC5OLe5v3KCq8KsOt2UKBuNUDb37+QnuuW3v0BGUzmBpilPwcAAAAASUVORK5CYII="
+                        },
+                        new
+                        {
+                            Id = 5,
+                            PromotionId = 1,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKrSURBVDjLpVNNSFRRGD33zZs3P85vOs3kOEUK4qqQCqzcDE0F2eBQgbQIhMAWGWREQdAyaF2LFkaLJCLbBBVoCga5KNEwChK00kYdHWfGnzfjzPu93ffGooTceOG89937vnPued93L6GUYjuDwzYHf7v7w5Dd6W7MiEpFvqRyOjOkg0Jjgc7caQy6Xp5vgIJoirK+mklOTE3xAb83cqm13iMplNhtln/UyeaYlN9FSbUUJa36/F2pxKXX1FpZ1cmToRSSGRkFiWImqyOZ0zG7oiO1qiMtUmQKFIoGzGZl3HuVwnJB4tyBSB1XkDRis3II7/LgzVgaK3kFQQ+BlZkRLAQCbwDwOQiyazJ6hxfh2+FBpc9meuLWS6ppsTbkQk3Qg77RNJZFBVUuziQKTMhrJ8iJBjmNqkoPasMukI3mcYWSVq4mS6ytdiHgd+LZ26RJMIhuhiyLHw8k4fU6zRwH/1cXCsWyA8Kqoyoq7LyO3WEfXo+kcbyxylzv/5hBhK0VM5PofngfLpcLPaoKPhwDvy5pMNzIsorFnIhI0A1BsCKVs+PdxJp5UOojfmhiEv3Dz9F46AiaWi6iIQjcuH7NEFAp6y1JZxk54IbDboWhuHenE7sZjLYlv33Fy95u7D/YjH3Np3Hz8gW0xk9iITXHfiE3Ny3J6p6GGgdxOThCOM3c1bBO2OPzp3G8eNqDpqbDSJxN4NyZBBKnWujo+2FSqkv85OX80syxq31+m7uigrdZCM+qybH2WZhKiM5w5McA9yUNOhUKa3eORi3NsTjGRkfItP9Ecml64TuMy/Q/dHR0UEEQHsTj8bzf7xe7uroetbe301gsZv2dQ7a6jYw8Jsvygc7OzhDLuyKK4q35+Xnn4OBg8U/SVg42xMedTudkW1sbjUajls3ffwGqPWPVeFFgygAAAABJRU5ErkJggg=="
+                        },
+                        new
+                        {
+                            Id = 6,
+                            PromotionId = 1,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJlSURBVDjLpZNbaM9hGMc/v8NsTqF2yMhZKIexmpFyRZIiblwouZDauLYoTVEryg2uXIoIOUU5zJkh4e9QDmtJbWxrbUzz/72/9/m6+P3HLslbT9/3ufm+n/f7Pm8gif9ZMcDxe717JLZ62UQzwxukZnhveBOptyHl8anwZk/3b5pZEwOYtGNDzejSfzm58dTH+b8JvFkpwMizdSCBT8E8OJftkzy4BPIOnONHQzPO+eIhBoM5CCrLwNKslBZM8uDykCbwtgMAl/o/GXhvBYMA2rtAlpGYZSR+UIGKCgCSggGSOHy1Q/0DTifufZUknbr/RZJ0+mHWn3mU9edbMu3qG9DmQ08lKSNw3jCJOIKzjzqJopBzLZ3EEVx40smDr/u4e96QGUXPGpkzYQSJywjCwSsIiKOADUvKiUNYX1tOUQhra8oJg4hZ02cQhhGrqyuyp03tTwbOGzKIQ7j8rIsn3Qd4fEVIIn6+kzAMaH35Fn37wbZD68gnCUl+EbAkI3CpIYmiCNZUlwEwbfIUgiBg1cIyJqbzGFPiWbl8GXUb66mqnkrJ2IvUbq88GEI2dQBRGHDjZTcAbZ8+ERDQnOvm+fszVM1egA89C8avwAeO2nlLAeqRxK7j79TzPa/mXJck6darTG8XdM3uhbry+piGrou5I1pcP17h7wwk5k4aRUfPANMrhtP2pZ8J44bx7nMfff29vGl/SNP1LQA0XdtCa2cO4GdhkPRg78kPVYm3kS71uNTjU8N5I/UpxSWracndZOn8ZVx6dZRhQcz9F3cAjgR/+51rt1c2AXXAaOA7cLTlcHvDL6y6kIpO9lqsAAAAAElFTkSuQmCC"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            PromotionId = 1,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIvSURBVDjLpdNdSFNhHMdx6YVIhaALC8GLoFcso5dVRHVRFFQISlJeVFYQgdKKiEprldrmS8KgWYK2raZGbaOcafamLVxq6qxs5qxIHYpkUiYsmVvn2zmnGBbkhbv48Ryeh//n+Z/D/4QBYaHkvweagxujb6cttzlOLuqtP7Wgx3I0tjr38Gp9TnIMYu6L2TEh8DkjQhgzJSL0tSC4rAR0K+i8EId/9BtPLq2RERnQ7Fs7xZs/4643b/qYN3caXrWY7KkEGnQw2AkjA9DnhN5G7FU38DzVUHYiTgIOyUBByqqI0ZyZ9bSUgNMIzeL6/iF4mqDrAQy8+b3fdJUipYK+51q0KfMkIFoG9EeWLfRlRrbLQFkilCZAbSa0ikU9DvHmF+KznmHzcZ81XcGHe0qpmOBHtB2bn+BXz/HQoofyJLi1B+qy4FU59Iutd9WIXRXTWaEbthdsprtG9TfgzJirFhza7zxWgXkvWPbDMzW8NcPXbvhYC+5qWiv1vDPtpvHKNglwBYEvmshK8YaA3LphOzw6B+134JOdQKvx54gx6YfPGO9/XZ4uAxXn10tAdhAYzY94KTQWQlupGBNCRyW+QgVDqkih7fJOp79em9x/84BhZUwULsMuilNjJWBTELAol5R0qKK8Q1nhwmBmuOA+PdtnTl3cMH4mxIIt19OWyh2Mf/8JB+kfIM92cUNIgLu5KD4kQC6uK9gaHOFJAdaz6yTgzGSAa3/+QmmdNf7sF2A4ynPOLQFtAAAAAElFTkSuQmCC"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            PromotionId = 1,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJ7SURBVDjLjZNPSFRRFMZ/9/2Z90anRlKzMS1UjFyoWS3U2oVQ0KIWrXJRFC7KTdRCqUWQkBt34aKN1a5FEUkRLbKFiBAoVi4kUQIbtfwz0zjjezPv3ttCwyYr+jibs7g/vu+cc8XDwbE+pcT5TFa5fsB26fzWtsC1Gbh85vA1AEtp0X76WGWp67pCCJN/yVMggxxP30xfADYAGV85juOKR29X8VgmJaaoKvtK2E4SaMXK9zCT01EKdB0Wxdw4V4VUQvyEWtkADMPEEJA1Fqgq+YoT+kzSTxHIAMtxqK6MMTtTSFGoBKXyXVkACjAMga+/EbJXSawn8aVHNggIdBrHcUj7YYrDBhqdN5gtgBDoQOHLHF7gs57zyaoAqQCRQyuJZQi0zp+qAaD1BsCllFS6EI2NryR+IBEiRDoVIRIqxzQN0GJ7BK03IkTMvXxZWCTqzlNQaOCIgLWVAhYXYsSi1ViG2LYZS/8KsHdTHm5ibnyIokgcISW2V8q+mnYibgyp1O9nseVgarkDqRRSKQ7432ip3I8CZuYXebXWjZkoxFQRbj/wyHjezhfd87de3p3osbTWCODkxmEBYNYnyKSXceffU9LaQcP0GEuZKY7UHaViVy1Dk8/E6Mf4nebO8qLNVPnGZLgIv6SGZP1ZtGnzbvIthw42Ig1JY6wNKXI017cCXLVcWyRRuWhjWTMIsYnSPwuApeQitohwqu4SANdP3GfwQz/w3LVClnj8ZGimJSt1vdZ//gOJVCI6GR9hIj5MV9sAva8v4poOgCf03179oubO8p6KqujN1obj1O5p4tPCOCPvh5mbTfb9F2AT0gtcAXYAKaB/9F686wcCdBKN9UyNSAAAAABJRU5ErkJggg=="
+                        },
+                        new
+                        {
+                            Id = 9,
+                            PromotionId = 1,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAF7SURBVDjL1VM9a8JQFD3PiEGSCO1ih1gnB0EkdCkKzp0E/0IHIRQc3bJ0LTh28me00CJ06SSddGmQGKpYHbQGVEz8wte8QIqQoYND6YXHvXC5h3POvY9QSnFMhHBk/D1A2C80TbtzU9X3hGX/bbdb1Go1UqlU6Gq1Qr1eJwEGu92uWiwWkU6nkUgk0Gq1cKtmoF29Qdd1qKpKJUmCKIoolUpGgIEgCGi321AUBbFYDPl8Hi/vQzSbBZTLCpbLJQaDAXieZ/V5AIChZ7NZPPRP8dxjxCIonMm4SKXQaDSQy+XQ6XQgyzKTFAlIYMjRaBRPZgizPY8ZeLx+CeA4DvP5HEy74zhYr9dMbnALtm1jsVi4pu1BmUUcAQ0RjMdjr/crwHQ6hWmauDyxIBEHIrGRCfdhGIY35A+zjRxe748Hk8kElmW5G/jEtWsiY9PTe/gYDhGPx71eMpn02DCQAMBoNLp3ad50u13i736z2XiZuX94F248+nPk/3+mb7TL1kbVXJ5aAAAAAElFTkSuQmCC"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            PromotionId = 1,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAALBSURBVDjLnZPfT1JhHMa56h9o66KrVqtZrWV60U0Xtf6DtjY3a6u7wi1TWIYusQKhBDIWwiY0S2IKOtCFS5DfsaGSTVZrhCAsROX3DzlgJE/vOY3WqivP9pyzc/Y+n+/7Pt/vYanVaplKpWoDwNqPWEqlskkul9ulUumZfQHo29DQEHdwcNA/MDBwaF8AgUBwgM/nL/B4PDuHwzlIf/P5fCKPx1N3OBx1i8VSNZvNDpPJdOG/AFpOp7Oju7t7SyaThVwul5eYKXKBVs7pwPqMCZOTk1WtVsv7BxAIBOZXVlZ+LC0tVb1eL1KpFEqlErYyRYTnXYi0NjNKWi3QaDR1Evqr34DV1VVJLBZjKvXP8RhjsVjEZrqAGxN1XHsDLOsUiJpvIZuIMOtsNhskEomIAZCXMm3K5/MMoKFcLoeNZB7RjW1EPV3IhAxIBDQMnF4rFAr3SOhXWCScOg3429xQZFmN1BctajtrCExfxXb0A7PLYDCI3t7eNZbRaNyjqQ1DA5DJZGB/N4HPxjZUU29RTciQDZthHW1HeaeESqUCLpcLll6vLyUSCWZbtLFQKCCdTmNx0QffdBfSwSlUvz2CW9yK75kpfHx5GVaDlDlKZ2cnWDqdzkonTxtpAG0eGRmJPxfcptZtfdhNvga1dhNu0TlUYj3IR+bgGL60w7nbkWWz2c9Y4+Pj92dnZ0F3ggbQZJVSUSKV/DkSXCXKRflr2y+FrpOjDCPmksP7tKWf6cLY2NgR0teS3+9HPB5HuVyG/sWdeswtw+6WkqleDrWTI7QwTyrCBrU5A/fjM9uuh6dPMcOgUChGyZiCDBPIUME9fLFOpcPYzdpQTZIMkoY/NI1a6RPiPi3sfScMDID8jYfJYITFYnGN9LfmenK+9l7UTHmEZylSiSKVKCf/JOV40EQRE2XjHadsPceohXtHPT8Bse8J0M1mZB4AAAAASUVORK5CYII="
+                        },
+                        new
+                        {
+                            Id = 11,
+                            PromotionId = 25,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHwSURBVDjLpZM9a1RBFIafM/fevfcmC7uQjWEjUZKAYBHEVEb/gIWFjVVSWEj6gI0/wt8gprPQykIsTP5BQLAIhBVBzRf52Gw22bk7c8YiZslugggZppuZ55z3nfdICIHrrBhg+ePaa1WZPyk0s+6KWwM1khiyhDcvns4uxQAaZOHJo4nRLMtEJPpnxY6Cd10+fNl4DpwBTqymaZrJ8uoBHfZoyTqTYzvkSRMXlP2jnG8bFYbCXWJGePlsEq8iPQmFA2MijEBhtpis7ZCWftC0LZx3xGnK1ESd741hqqUaqgMeAChgjGDDLqXkgMPTJtZ3KJzDhTZpmtK2OSO5IRB6xvQDRAhOsb5Lx1lOu5ZCHV4B6RLUExvh4s+ZntHhDJAxSqs9TCDBqsc6j0iJdqtMuTROFBkIcllCCGcSytFNfm1tU8k2GRo2pOI43h9ie6tOvTJFbORyDsJFQHKD8fw+P9dWqJZ/I96TdEa5Nb1AOavjVfti0dfB+t4iXhWvyh27y9zEbRRobG7z6fgVeqSoKvB5oIMQEODx7FLvIJo55KS9R7b5ldrDReajpC+Z5z7GAHJFXn1exedVbG36ijwOmJgl0kS7lXtjD0DkLyqc70uPnSuIIwk9QCmWd+9XGnOFDzP/M5xxBInhLYBcd5z/AAZv2pOvFcS/AAAAAElFTkSuQmCC"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            PromotionId = 25,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJGSURBVDjLzZNvLNRxHMc96qGt5z3uH3FIrEUlItel5VLtbjbcdJhwOBoiRpy1zhNNVsymKbNl0mit0hbTH0dDtRul21iju19cjuN+r760tbWVZT3pu70ffl7f9+fzeX+8AK9/kdf/AZAL8zRCX4SkNXnyDZLHkCWtZmZIK2nnJbcuRVpOTJSWzp6TXPFqafF43Jzz6DHtOkAUJAg56e2B/n4YGQGrFcbH8Tx9wlxrK/aWFuabm3E03MBmNmO7VMpC+BHnfGhY3BrgFTcboasL2tthbAyGh6GjA09+Pja9nmmdDntKCrNaLa9VKt5VV2PNykEKCLGtAfxlo+GFXFMF4jemplh/fX141GqmlUo+x8byVWgyIoK3lZVM6lKR/PfNOHYFJKzPQPS7VfT7wFNWCp2dMDMDFguyRsOcKHQIiCMmhomqKj4k6ZD89k7YdyoUv2xhRZ/q7U5O7l4tKICBARgdRRbWpagonNHRzJpMfBTFDt+gCfsOvz2/XeOSRuvtSjjT7TYW/ACIGTgPH2aptpZPmVmUN6rd+junhzbMweKJk97fYpQPl4tKkNvaWKmpwZ5toKRRLRc/zqWw9wLxt5SWDYO0cChy2/z+g9ZlQx5OgwFjU7xc9CiHpjf1NFjqSLubRGRt2PvwipAtf0yYFBjqI/odrLimciXePuXOvZ/O9SEzdS9NZN9L50BZsCv4oqLnryOrqo/CPFiNqb+c2KuRBBn9Qjd1C8IyV55fpvxZMYF5vmz6mIRlhGUUOT7sztj+E/Ad9GPLsXC6ErkAAAAASUVORK5CYII="
+                        },
+                        new
+                        {
+                            Id = 13,
+                            PromotionId = 25,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHXSURBVBgZpcG/S1VxHMfh1/me41USwpa0XwTpUNToECTR4D/g0G1oiKChCAchChqiKYzCIbGWtlpuhBBBS7TY0FoUSZOVSIo/Crz3eu895/N511cQDWoQnyeRxE4kQyOVqwNn+u+u1NUpAe7IHXNDLlyOzHAJmWHu7C7ltenpuRuTY+WJrP9U/4O2js7Q3cF2dNbq9gCYyOq5Qn2lynat5Qr8kcnElfMpkCCJWqvK919feT3zinsnH/E/l0a/EQXJ+ZciL4juv7vD/M9V5pfqzC1WmZlfJTI3ooDEBiEgQYJWMyf6svCZ0bfXydoDpVLGrraMyAsjCuaG2CQ5RVFwsOMwF56fpau9CyRuvRymLU3JSoHIzYmCXCRsIbDCaDabDPSd5sjeXnoP9NGwOuXxQUppSuRuRJm7sUESLiEXa40GUx+n6NnTw+LKEqomvLj2BnfWuTtRKPKcrSTRauUsLC9wc/A27z99oLbc4PHlpyQhIaSsK/KCKMgcsUlyrDBmf8xybN9xjnaf4MlwBZKENATSJCGSO1Hm7kRCRHJRFAWNepNo/OJD/pKmRC4RJUMjlUr3of1lN8PNMTPcHctz3B2XkBsy4XLkjjvRs8mx8rlEEjsR2KHf89sagbhDhaEAAAAASUVORK5CYII="
+                        },
+                        new
+                        {
+                            Id = 14,
+                            PromotionId = 25,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGXSURBVBgZBcHPi0xxAADwz3szfoxRGqzV7C6hVhwcJU6Ii5xxWBJFDuIitaX8FViExMVNIoe9IAeSH+vHJqsVOWBmlpmdNzPv++b5fKIcMLU5HMp2/xttLUrm5p+1bp5+DEQ5PhSz8ezs4LKypodKhs2E5v3o5JnfRLkPC7LrlbEBsY55P701Y70RX16U9h39E+XeXlh+cbWgLxXJJWp6lqibupceiN5szF6tKk+KbLVOoi3R1dNUNuvb/jiMrSxf8sCMr/oymUxHW+qXqt6pOOzp+2yJlo/m9HR05L6b1FSQbiuGDU11bX/l5sUSwbSb/qk5qFeI03jAiJqKIxZq6/nkqjreq0sV0x8LK+Me2WlASx9z2mIULRbE6ZOGQQes0BUEHcOWiuTWKUnfxent130SqSCV6olUlVTt8kW4HOXuXhs9tkZNQaJpXksiNaTn0fOwu0h67sWm+vbPGtYakiuoqGh4OJsdu9KJcpyvdm8M7a1oKNmhoGXay6fh5MRHohxw4nD3eLolL1ZD1g9T4VZ2Z6IL/wGvx8Nbuo22qgAAAABJRU5ErkJggg=="
+                        },
+                        new
+                        {
+                            Id = 15,
+                            PromotionId = 25,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIhSURBVDjLlZPrThNRFIWJicmJz6BWiYbIkYDEG0JbBiitDQgm0PuFXqSAtKXtpE2hNuoPTXwSnwtExd6w0pl2OtPlrphKLSXhx07OZM769qy19wwAGLhM1ddC184+d18QMzoq3lfsD3LZ7Y3XbE5DL6Atzuyilc5Ciyd7IHVfgNcDYTQ2tvDr5crn6uLSvX+Av2Lk36FFpSVENDe3OxDZu8apO5rROJDLo30+Nlvj5RnTlVNAKs1aCVFr7b4BPn6Cls21AWgEQlz2+Dl1h7IdA+i97A/geP65WhbmrnZZ0GIJpr6OqZqYAd5/gJpKox4Mg7pD2YoC2b0/54rJQuJZdm6Izcgma4TW1WZ0h+y8BfbyJMwBmSxkjw+VObNanp5h/adwGhaTXF4NWbLj9gEONyCmUZmd10pGgf1/vwcgOT3tUQE0DdicwIod2EmSbwsKE1P8QoDkcHPJ5YESjgBJkYQpIEZ2KEB51Y6y3ojvY+P8XEDN7uKS0w0ltA7QGCWHCxSWWpwyaCeLy0BkA7UXyyg8fIzDoWHeBaDN4tQdSvAVdU1Aok+nsNTipIEVnkywo/FHatVkBoIhnFisOBoZxcGtQd4B0GYJNZsDSiAEadUBCkstPtN3Avs2Msa+Dt9XfxoFSNYF/Bh9gP0bOqHLAm2WUF1YQskwrVFYPWkf3h1iXwbvqGfFPSGW9Eah8HSS9fuZDnS32f71m8KFY7xs/QZyu6TH2+2+FAAAAABJRU5ErkJggg=="
+                        },
+                        new
+                        {
+                            Id = 16,
+                            PromotionId = 25,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHOSURBVDjLpZOxa1RBEIe/d/e8FKeFEA2IGBWCICZYBSESBCFglUDSCJZaRBBbK1HQ0s4/QQlCgoKdoBA9sVBshCBETCNRiUUg5PDt7MxY7HuXdxgEycKwyzJ88/vN7Gbuzl5WDvDozeZtd66p21EzQw2iGaqGmhPVaqFodNTs/f0rI+M5gLnfmB0/MPg/le88+TLWU6BmgwDtpevgDhrBFETSORQgAQoBEbZvvUJEB2qAqg8ORw6BxRQeS0gBUkAMsPIdAIm60wNVKwEZrG+AW1JilpRotQNDQwCEOiCWgIXhe1w+f/if3hffrXMhxH4Fooa5kzdT0rNPi3TWlrl6bp7PP1d4ufqCiyNTzIzOUYiz1RWCJECjsuBA3swAmBmdoxu6APza3uDB9EM6a8sAFFEJYsRoOwBRww3yxt+Su6FLq9nqAQuxst11QDTcnX2lhc7XVO3jtw8cOzjMzafzTJ26RJUL0B7Ia020dNlsJAsTJyaZODlZziVj+swsWZb1AarJJUCMeCnn8esfaWruiIKoEtQIkry3mlUx+qfg7owd389prd6+9/7CbsvMrfaQ/O3dhdWzQa0tUZGoaDREjahxV8Dm1u/nANlev/MfAjw0JrMu09AAAAAASUVORK5CYII="
+                        },
+                        new
+                        {
+                            Id = 17,
+                            PromotionId = 25,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHwSURBVDjLpZM9a1RBFIafM/fevfcmC7uQjWEjUZKAYBHEVEb/gIWFjVVSWEj6gI0/wt8gprPQykIsTP5BQLAIhBVBzRf52Gw22bk7c8YiZslugggZppuZ55z3nfdICIHrrBhg+ePaa1WZPyk0s+6KWwM1khiyhDcvns4uxQAaZOHJo4nRLMtEJPpnxY6Cd10+fNl4DpwBTqymaZrJ8uoBHfZoyTqTYzvkSRMXlP2jnG8bFYbCXWJGePlsEq8iPQmFA2MijEBhtpis7ZCWftC0LZx3xGnK1ESd741hqqUaqgMeAChgjGDDLqXkgMPTJtZ3KJzDhTZpmtK2OSO5IRB6xvQDRAhOsb5Lx1lOu5ZCHV4B6RLUExvh4s+ZntHhDJAxSqs9TCDBqsc6j0iJdqtMuTROFBkIcllCCGcSytFNfm1tU8k2GRo2pOI43h9ie6tOvTJFbORyDsJFQHKD8fw+P9dWqJZ/I96TdEa5Nb1AOavjVfti0dfB+t4iXhWvyh27y9zEbRRobG7z6fgVeqSoKvB5oIMQEODx7FLvIJo55KS9R7b5ldrDReajpC+Z5z7GAHJFXn1exedVbG36ijwOmJgl0kS7lXtjD0DkLyqc70uPnSuIIwk9QCmWd+9XGnOFDzP/M5xxBInhLYBcd5z/AAZv2pOvFcS/AAAAAElFTkSuQmCC"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            PromotionId = 25,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIpSURBVDjLddM9aFRBFIbh98zM3WyybnYVf4KSQjBJJVZBixhRixSaShtBMKUoWomgnaCxsJdgIQSstE4nEhNREgyoZYhpkogkuMa4/3fuHIu7gpLd00wz52POMzMydu/Dy958dMwYioomIIgqDa+VnWrzebNUejY/NV6nQ8nlR4ufXt0fzm2WgxUgqBInAWdhemGbpcWNN9/XN27PPb1QbRdgjEhPqap2ZUv5+iOwvJnweT1mT5djZKjI6Ej/udz+wt1OJzAKYgWyDjJWyFghmzFsbtcY2gsTJwv09/Vc7RTgAEQgsqAKaoWsM8wu/z7a8B7vA8cHD3Fr+ktFgspO3a+vrdVfNEulJ/NT4zWngCBYY1oqSghKI465fvYwW+VAatPX07IZmF7YfrC0uDE8emPmilOFkHYiBKxAxhmSRPlZVVa2FGOU2Ad2ap4zg92MDBXJZczFmdflx05VEcAZMGIIClZASdesS2cU/dcm4sTBArNzXTcNakiCb3/HLRsn4Fo2qyXh3WqDXzUlcgYnam3Dl4Hif82dbOiyiBGstSjg4majEpl8rpCNUQUjgkia0M5GVAlBEBFUwflEv12b/Hig6SmA1iDtzhcsE6eP7LIxAchAtwNVxc1MnhprN/+lh0txErxrPZVdFdRDEEzHT6LWpTbtq+HLSDDiOm2o1uqlyOT37bIhHdKaXoL6pqhq24Dzd96/tUYGwPSBVv7atFglaFIu5KLuPxeX/xsp7aR6AAAAAElFTkSuQmCC"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            PromotionId = 25,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJ6SURBVDjLjZO7T1NhGMY7Mji6uJgYt8bElTjof6CDg4sMSqIxJsRGB5F4TwQSIg1QKC0KWmkZEEsKtEcSxF5ohV5pKSicXqX3aqGn957z+PUEGopiGJ583/A+v3znvPkJAAjWR0VNJG0kGhKahCFhXcN3YBFfx8Kry6ym4xIzce88/fbWGY2k5WRb77UTTbWuYA9gDGg7EVmSIOF4g5T7HZKuMcSW5djWDyL0uRf0dCc8inYYxTcw9fAiCMBYB3gVj1z7gLhNTjKCqHkYP79KENC9Bq3uxrrqORzy+9D3tPAAccspVx1gWg0KbaZFbGllWFM+xrKkFQudV0CeDfJsjN4+C2nracjunoPq5VXIBrowMK4V1gG1LGyWdbZwCalsBYUyh2KFQzpXxVqkAGswD3+qBDpZwow9iYE5v26/VwfUQnnznyhvjguQYabIIpKpYD1ahI8UTT92MUSFuP5Z/9TBTgOgFrVjp3nakaG/0VmEfpX58pwzjUEquNk362s+PP8XYD/KpYTBHmRg9Wch0QX1R80dCZhYipudYQY2Auib8RmODVCa4hfUK4ngaiiLNFNFdKeCWWscXZMbWy9Unv9/gsIQU09a4pwvUeA3Uapy2C2wCKXL0DqTePLexbWPOv79E8f0UWrencZ2poxciUWZlKssB4bcHeE83NsFuMgpo2iIpMuNa1TNu4XjhggWvb+R2K3wZdLlAZl8Fd9jRb5sD+Xx0RJBx5gdom6VsMEFDyWF0WyCeSOFcDKPnRxZYTQL5Rc/nn1w4oFsBaIhC3r6FRh5erPRhYMyHdeFw4C6zkRhmijM7CnMu0AUZonCDCnRJBqSus5/ABD6Ba5CkQS8AAAAAElFTkSuQmCC"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            PromotionId = 25,
+                            PromotionImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAI9SURBVDjLpVNfSFNRHP7u3MiHZqJCumZZamVRaSas0V40i4gKeoreIjKI3iK40GsPEpQEIRRBj/17kYKMSodlZk8rmy42mUjjLrfVnPt/77nn9jt3NSFfFH/w8f3OOfd+v3/nSIZhYD1mwTrN+s8JBoOXNU0bIBTJcoVCIZ3P5+OEL7lcLkacIg4R3sqyzFYI0Ad36UcQZI/Hc3/NGWQyGRtFHSahp2spQRoLsx/EzmzICxJA9Z7j0HUOZkKHxnQwTYdKrGlizUxWS35ECBibremyopiKGAwX4Ia51omFL/Z0zk2f9DEW+L08hRaHHZFYFq1bqjC/kMbuxiqElSXsbapGKJJCe0sNAvNJdO2qM/dEhqrKIHlnVcogg0g8ayqLAxGRiSjlUowytzfX4uDOWoz6ohiZisPCWCml7o4GHO10UK0cJ12NKKo6znqaUFA5zvc0Q0m8R0i5hYev+3Dpzml8mnls9kN65c8ajso85qJLYExEXo4qMtCIo79GUGH3obPtEJw1rfBOD2HS/wHFpBtWs8sU9dThrXgyGsa57h0rRtU3cB1nuo5Bt+g40NCLdzPP4drnxrOhYVhVjYHZOD5/T2BbvR0f/QtmhznnJaYpxBajsEkbcaLtoil4recBXn4bpLMXsBZVlghkjbr/5lvy/96BZHoR08oEvirjkHsfof/NBVRWbIAk2QxpNa/RddVx07l90w33/iNore9A6KcPE1PjiMylbkurfc4k0k90hWAniJs3OHlPkf8A2YeC/G6HEpkAAAAASUVORK5CYII="
                         });
                 });
 
@@ -666,6 +810,15 @@ namespace IndieWorld.Migrations
                     b.Navigation("Role");
                 });
 
+            modelBuilder.Entity("IndieWorld.Models.PromotionPic", b =>
+                {
+                    b.HasOne("IndieWorld.Models.Promotion", null)
+                        .WithMany("PromotionPics")
+                        .HasForeignKey("PromotionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("IndieWorld.Models.Show", b =>
                 {
                     b.HasOne("IndieWorld.Models.Promotion", "Promotion")
@@ -694,6 +847,8 @@ namespace IndieWorld.Migrations
 
             modelBuilder.Entity("IndieWorld.Models.Promotion", b =>
                 {
+                    b.Navigation("PromotionPics");
+
                     b.Navigation("Shows");
                 });
 #pragma warning restore 612, 618

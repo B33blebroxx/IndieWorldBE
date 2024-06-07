@@ -12,5 +12,6 @@
         public string? Owner { get; set; }
         public string? ShowFrequency { get; set; }
         public ICollection<Show>? Shows { get; set; }
+        public ICollection<PromotionPic>? PromotionPics { get; set; }
     }
 }
