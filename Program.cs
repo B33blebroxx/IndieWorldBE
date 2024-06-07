@@ -51,5 +51,6 @@ ShowApi.Map(app);
 PerformerApi.Map(app);
 RoleApi.Map(app);
 FilterSearchApi.Map(app);
+PromotionPicApi.Map(app);
 
 app.Run();
