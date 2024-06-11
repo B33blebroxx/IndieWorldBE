@@ -348,7 +348,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 11,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHwSURBVDjLpZM9a1RBFIafM/fevfcmC7uQjWEjUZKAYBHEVEb/gIWFjVVSWEj6gI0/wt8gprPQykIsTP5BQLAIhBVBzRf52Gw22bk7c8YiZslugggZppuZ55z3nfdICIHrrBhg+ePaa1WZPyk0s+6KWwM1khiyhDcvns4uxQAaZOHJo4nRLMtEJPpnxY6Cd10+fNl4DpwBTqymaZrJ8uoBHfZoyTqTYzvkSRMXlP2jnG8bFYbCXWJGePlsEq8iPQmFA2MijEBhtpis7ZCWftC0LZx3xGnK1ESd741hqqUaqgMeAChgjGDDLqXkgMPTJtZ3KJzDhTZpmtK2OSO5IRB6xvQDRAhOsb5Lx1lOu5ZCHV4B6RLUExvh4s+ZntHhDJAxSqs9TCDBqsc6j0iJdqtMuTROFBkIcllCCGcSytFNfm1tU8k2GRo2pOI43h9ie6tOvTJFbORyDsJFQHKD8fw+P9dWqJZ/I96TdEa5Nb1AOavjVfti0dfB+t4iXhWvyh27y9zEbRRobG7z6fgVeqSoKvB5oIMQEODx7FLvIJo55KS9R7b5ldrDReajpC+Z5z7GAHJFXn1exedVbG36ijwOmJgl0kS7lXtjD0DkLyqc70uPnSuIIwk9QCmWd+9XGnOFDzP/M5xxBInhLYBcd5z/AAZv2pOvFcS/AAAAAElFTkSuQmCC",
-                            PerformerId = 34,
+                            PerformerId = 3,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Battle in the Borough"
                         },
@@ -356,7 +356,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 12,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJGSURBVDjLzZNvLNRxHMc96qGt5z3uH3FIrEUlItel5VLtbjbcdJhwOBoiRpy1zhNNVsymKbNl0mit0hbTH0dDtRul21iju19cjuN+r760tbWVZT3pu70ffl7f9+fzeX+8AK9/kdf/AZAL8zRCX4SkNXnyDZLHkCWtZmZIK2nnJbcuRVpOTJSWzp6TXPFqafF43Jzz6DHtOkAUJAg56e2B/n4YGQGrFcbH8Tx9wlxrK/aWFuabm3E03MBmNmO7VMpC+BHnfGhY3BrgFTcboasL2tthbAyGh6GjA09+Pja9nmmdDntKCrNaLa9VKt5VV2PNykEKCLGtAfxlo+GFXFMF4jemplh/fX141GqmlUo+x8byVWgyIoK3lZVM6lKR/PfNOHYFJKzPQPS7VfT7wFNWCp2dMDMDFguyRsOcKHQIiCMmhomqKj4k6ZD89k7YdyoUv2xhRZ/q7U5O7l4tKICBARgdRRbWpagonNHRzJpMfBTFDt+gCfsOvz2/XeOSRuvtSjjT7TYW/ACIGTgPH2aptpZPmVmUN6rd+junhzbMweKJk97fYpQPl4tKkNvaWKmpwZ5toKRRLRc/zqWw9wLxt5SWDYO0cChy2/z+g9ZlQx5OgwFjU7xc9CiHpjf1NFjqSLubRGRt2PvwipAtf0yYFBjqI/odrLimciXePuXOvZ/O9SEzdS9NZN9L50BZsCv4oqLnryOrqo/CPFiNqb+c2KuRBBn9Qjd1C8IyV55fpvxZMYF5vmz6mIRlhGUUOT7sztj+E/Ad9GPLsXC6ErkAAAAASUVORK5CYII=",
-                            PerformerId = 34,
+                            PerformerId = 3,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Battle in the Borough"
                         },
@@ -364,7 +364,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 13,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHXSURBVBgZpcG/S1VxHMfh1/me41USwpa0XwTpUNToECTR4D/g0G1oiKChCAchChqiKYzCIbGWtlpuhBBBS7TY0FoUSZOVSIo/Crz3eu895/N511cQDWoQnyeRxE4kQyOVqwNn+u+u1NUpAe7IHXNDLlyOzHAJmWHu7C7ltenpuRuTY+WJrP9U/4O2js7Q3cF2dNbq9gCYyOq5Qn2lynat5Qr8kcnElfMpkCCJWqvK919feT3zinsnH/E/l0a/EQXJ+ZciL4juv7vD/M9V5pfqzC1WmZlfJTI3ooDEBiEgQYJWMyf6svCZ0bfXydoDpVLGrraMyAsjCuaG2CQ5RVFwsOMwF56fpau9CyRuvRymLU3JSoHIzYmCXCRsIbDCaDabDPSd5sjeXnoP9NGwOuXxQUppSuRuRJm7sUESLiEXa40GUx+n6NnTw+LKEqomvLj2BnfWuTtRKPKcrSTRauUsLC9wc/A27z99oLbc4PHlpyQhIaSsK/KCKMgcsUlyrDBmf8xybN9xjnaf4MlwBZKENATSJCGSO1Hm7kRCRHJRFAWNepNo/OJD/pKmRC4RJUMjlUr3of1lN8PNMTPcHctz3B2XkBsy4XLkjjvRs8mx8rlEEjsR2KHf89sagbhDhaEAAAAASUVORK5CYII=",
-                            PerformerId = 34,
+                            PerformerId = 3,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Battle in the Borough"
                         },
@@ -372,7 +372,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 14,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGXSURBVBgZBcHPi0xxAADwz3szfoxRGqzV7C6hVhwcJU6Ii5xxWBJFDuIitaX8FViExMVNIoe9IAeSH+vHJqsVOWBmlpmdNzPv++b5fKIcMLU5HMp2/xttLUrm5p+1bp5+DEQ5PhSz8ezs4LKypodKhs2E5v3o5JnfRLkPC7LrlbEBsY55P701Y70RX16U9h39E+XeXlh+cbWgLxXJJWp6lqibupceiN5szF6tKk+KbLVOoi3R1dNUNuvb/jiMrSxf8sCMr/oymUxHW+qXqt6pOOzp+2yJlo/m9HR05L6b1FSQbiuGDU11bX/l5sUSwbSb/qk5qFeI03jAiJqKIxZq6/nkqjreq0sV0x8LK+Me2WlASx9z2mIULRbE6ZOGQQes0BUEHcOWiuTWKUnfxent130SqSCV6olUlVTt8kW4HOXuXhs9tkZNQaJpXksiNaTn0fOwu0h67sWm+vbPGtYakiuoqGh4OJsdu9KJcpyvdm8M7a1oKNmhoGXay6fh5MRHohxw4nD3eLolL1ZD1g9T4VZ2Z6IL/wGvx8Nbuo22qgAAAABJRU5ErkJggg==",
-                            PerformerId = 34,
+                            PerformerId = 3,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Battle in the Borough"
                         },
@@ -380,7 +380,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 15,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIhSURBVDjLlZPrThNRFIWJicmJz6BWiYbIkYDEG0JbBiitDQgm0PuFXqSAtKXtpE2hNuoPTXwSnwtExd6w0pl2OtPlrphKLSXhx07OZM769qy19wwAGLhM1ddC184+d18QMzoq3lfsD3LZ7Y3XbE5DL6Atzuyilc5Ciyd7IHVfgNcDYTQ2tvDr5crn6uLSvX+Av2Lk36FFpSVENDe3OxDZu8apO5rROJDLo30+Nlvj5RnTlVNAKs1aCVFr7b4BPn6Cls21AWgEQlz2+Dl1h7IdA+i97A/geP65WhbmrnZZ0GIJpr6OqZqYAd5/gJpKox4Mg7pD2YoC2b0/54rJQuJZdm6Izcgma4TW1WZ0h+y8BfbyJMwBmSxkjw+VObNanp5h/adwGhaTXF4NWbLj9gEONyCmUZmd10pGgf1/vwcgOT3tUQE0DdicwIod2EmSbwsKE1P8QoDkcHPJ5YESjgBJkYQpIEZ2KEB51Y6y3ojvY+P8XEDN7uKS0w0ltA7QGCWHCxSWWpwyaCeLy0BkA7UXyyg8fIzDoWHeBaDN4tQdSvAVdU1Aok+nsNTipIEVnkywo/FHatVkBoIhnFisOBoZxcGtQd4B0GYJNZsDSiAEadUBCkstPtN3Avs2Msa+Dt9XfxoFSNYF/Bh9gP0bOqHLAm2WUF1YQskwrVFYPWkf3h1iXwbvqGfFPSGW9Eah8HSS9fuZDnS32f71m8KFY7xs/QZyu6TH2+2+FAAAAABJRU5ErkJggg==",
-                            PerformerId = 34,
+                            PerformerId = 3,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Clobberin' Time"
                         },
@@ -388,7 +388,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 16,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHOSURBVDjLpZOxa1RBEIe/d/e8FKeFEA2IGBWCICZYBSESBCFglUDSCJZaRBBbK1HQ0s4/QQlCgoKdoBA9sVBshCBETCNRiUUg5PDt7MxY7HuXdxgEycKwyzJ88/vN7Gbuzl5WDvDozeZtd66p21EzQw2iGaqGmhPVaqFodNTs/f0rI+M5gLnfmB0/MPg/le88+TLWU6BmgwDtpevgDhrBFETSORQgAQoBEbZvvUJEB2qAqg8ORw6BxRQeS0gBUkAMsPIdAIm60wNVKwEZrG+AW1JilpRotQNDQwCEOiCWgIXhe1w+f/if3hffrXMhxH4Fooa5kzdT0rNPi3TWlrl6bp7PP1d4ufqCiyNTzIzOUYiz1RWCJECjsuBA3swAmBmdoxu6APza3uDB9EM6a8sAFFEJYsRoOwBRww3yxt+Su6FLq9nqAQuxst11QDTcnX2lhc7XVO3jtw8cOzjMzafzTJ26RJUL0B7Ia020dNlsJAsTJyaZODlZziVj+swsWZb1AarJJUCMeCnn8esfaWruiIKoEtQIkry3mlUx+qfg7owd389prd6+9/7CbsvMrfaQ/O3dhdWzQa0tUZGoaDREjahxV8Dm1u/nANlev/MfAjw0JrMu09AAAAAASUVORK5CYII=",
-                            PerformerId = 34,
+                            PerformerId = 3,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Clobberin' Time"
                         },
@@ -396,7 +396,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 17,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHwSURBVDjLpZM9a1RBFIafM/fevfcmC7uQjWEjUZKAYBHEVEb/gIWFjVVSWEj6gI0/wt8gprPQykIsTP5BQLAIhBVBzRf52Gw22bk7c8YiZslugggZppuZ55z3nfdICIHrrBhg+ePaa1WZPyk0s+6KWwM1khiyhDcvns4uxQAaZOHJo4nRLMtEJPpnxY6Cd10+fNl4DpwBTqymaZrJ8uoBHfZoyTqTYzvkSRMXlP2jnG8bFYbCXWJGePlsEq8iPQmFA2MijEBhtpis7ZCWftC0LZx3xGnK1ESd741hqqUaqgMeAChgjGDDLqXkgMPTJtZ3KJzDhTZpmtK2OSO5IRB6xvQDRAhOsb5Lx1lOu5ZCHV4B6RLUExvh4s+ZntHhDJAxSqs9TCDBqsc6j0iJdqtMuTROFBkIcllCCGcSytFNfm1tU8k2GRo2pOI43h9ie6tOvTJFbORyDsJFQHKD8fw+P9dWqJZ/I96TdEa5Nb1AOavjVfti0dfB+t4iXhWvyh27y9zEbRRobG7z6fgVeqSoKvB5oIMQEODx7FLvIJo55KS9R7b5ldrDReajpC+Z5z7GAHJFXn1exedVbG36ijwOmJgl0kS7lXtjD0DkLyqc70uPnSuIIwk9QCmWd+9XGnOFDzP/M5xxBInhLYBcd5z/AAZv2pOvFcS/AAAAAElFTkSuQmCC",
-                            PerformerId = 34,
+                            PerformerId = 3,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Clobberin' Time"
                         },
@@ -404,7 +404,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 18,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIpSURBVDjLddM9aFRBFIbh98zM3WyybnYVf4KSQjBJJVZBixhRixSaShtBMKUoWomgnaCxsJdgIQSstE4nEhNREgyoZYhpkogkuMa4/3fuHIu7gpLd00wz52POMzMydu/Dy958dMwYioomIIgqDa+VnWrzebNUejY/NV6nQ8nlR4ufXt0fzm2WgxUgqBInAWdhemGbpcWNN9/XN27PPb1QbRdgjEhPqap2ZUv5+iOwvJnweT1mT5djZKjI6Ej/udz+wt1OJzAKYgWyDjJWyFghmzFsbtcY2gsTJwv09/Vc7RTgAEQgsqAKaoWsM8wu/z7a8B7vA8cHD3Fr+ktFgspO3a+vrdVfNEulJ/NT4zWngCBYY1oqSghKI465fvYwW+VAatPX07IZmF7YfrC0uDE8emPmilOFkHYiBKxAxhmSRPlZVVa2FGOU2Ad2ap4zg92MDBXJZczFmdflx05VEcAZMGIIClZASdesS2cU/dcm4sTBArNzXTcNakiCb3/HLRsn4Fo2qyXh3WqDXzUlcgYnam3Dl4Hif82dbOiyiBGstSjg4majEpl8rpCNUQUjgkia0M5GVAlBEBFUwflEv12b/Hig6SmA1iDtzhcsE6eP7LIxAchAtwNVxc1MnhprN/+lh0txErxrPZVdFdRDEEzHT6LWpTbtq+HLSDDiOm2o1uqlyOT37bIhHdKaXoL6pqhq24Dzd96/tUYGwPSBVv7atFglaFIu5KLuPxeX/xsp7aR6AAAAAElFTkSuQmCC",
-                            PerformerId = 34,
+                            PerformerId = 3,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Clobberin' Time"
                         },
@@ -412,7 +412,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 19,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJ6SURBVDjLjZO7T1NhGMY7Mji6uJgYt8bElTjof6CDg4sMSqIxJsRGB5F4TwQSIg1QKC0KWmkZEEsKtEcSxF5ohV5pKSicXqX3aqGn957z+PUEGopiGJ583/A+v3znvPkJAAjWR0VNJG0kGhKahCFhXcN3YBFfx8Kry6ym4xIzce88/fbWGY2k5WRb77UTTbWuYA9gDGg7EVmSIOF4g5T7HZKuMcSW5djWDyL0uRf0dCc8inYYxTcw9fAiCMBYB3gVj1z7gLhNTjKCqHkYP79KENC9Bq3uxrrqORzy+9D3tPAAccspVx1gWg0KbaZFbGllWFM+xrKkFQudV0CeDfJsjN4+C2nracjunoPq5VXIBrowMK4V1gG1LGyWdbZwCalsBYUyh2KFQzpXxVqkAGswD3+qBDpZwow9iYE5v26/VwfUQnnznyhvjguQYabIIpKpYD1ahI8UTT92MUSFuP5Z/9TBTgOgFrVjp3nakaG/0VmEfpX58pwzjUEquNk362s+PP8XYD/KpYTBHmRg9Wch0QX1R80dCZhYipudYQY2Auib8RmODVCa4hfUK4ngaiiLNFNFdKeCWWscXZMbWy9Unv9/gsIQU09a4pwvUeA3Uapy2C2wCKXL0DqTePLexbWPOv79E8f0UWrencZ2poxciUWZlKssB4bcHeE83NsFuMgpo2iIpMuNa1TNu4XjhggWvb+R2K3wZdLlAZl8Fd9jRb5sD+Xx0RJBx5gdom6VsMEFDyWF0WyCeSOFcDKPnRxZYTQL5Rc/nn1w4oFsBaIhC3r6FRh5erPRhYMyHdeFw4C6zkRhmijM7CnMu0AUZonCDCnRJBqSus5/ABD6Ba5CkQS8AAAAAElFTkSuQmCC",
-                            PerformerId = 34,
+                            PerformerId = 3,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Clobberin' Time"
                         },
@@ -420,7 +420,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 20,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAI9SURBVDjLpVNfSFNRHP7u3MiHZqJCumZZamVRaSas0V40i4gKeoreIjKI3iK40GsPEpQEIRRBj/17kYKMSodlZk8rmy42mUjjLrfVnPt/77nn9jt3NSFfFH/w8f3OOfd+v3/nSIZhYD1mwTrN+s8JBoOXNU0bIBTJcoVCIZ3P5+OEL7lcLkacIg4R3sqyzFYI0Ad36UcQZI/Hc3/NGWQyGRtFHSahp2spQRoLsx/EzmzICxJA9Z7j0HUOZkKHxnQwTYdKrGlizUxWS35ECBibremyopiKGAwX4Ia51omFL/Z0zk2f9DEW+L08hRaHHZFYFq1bqjC/kMbuxiqElSXsbapGKJJCe0sNAvNJdO2qM/dEhqrKIHlnVcogg0g8ayqLAxGRiSjlUowytzfX4uDOWoz6ohiZisPCWCml7o4GHO10UK0cJ12NKKo6znqaUFA5zvc0Q0m8R0i5hYev+3Dpzml8mnls9kN65c8ajso85qJLYExEXo4qMtCIo79GUGH3obPtEJw1rfBOD2HS/wHFpBtWs8sU9dThrXgyGsa57h0rRtU3cB1nuo5Bt+g40NCLdzPP4drnxrOhYVhVjYHZOD5/T2BbvR0f/QtmhznnJaYpxBajsEkbcaLtoil4recBXn4bpLMXsBZVlghkjbr/5lvy/96BZHoR08oEvirjkHsfof/NBVRWbIAk2QxpNa/RddVx07l90w33/iNore9A6KcPE1PjiMylbkurfc4k0k90hWAniJs3OHlPkf8A2YeC/G6HEpkAAAAASUVORK5CYII=",
-                            PerformerId = 34,
+                            PerformerId = 3,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Clobberin' Time"
                         });
@@ -638,7 +638,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 11,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHwSURBVDjLpZM9a1RBFIafM/fevfcmC7uQjWEjUZKAYBHEVEb/gIWFjVVSWEj6gI0/wt8gprPQykIsTP5BQLAIhBVBzRf52Gw22bk7c8YiZslugggZppuZ55z3nfdICIHrrBhg+ePaa1WZPyk0s+6KWwM1khiyhDcvns4uxQAaZOHJo4nRLMtEJPpnxY6Cd10+fNl4DpwBTqymaZrJ8uoBHfZoyTqTYzvkSRMXlP2jnG8bFYbCXWJGePlsEq8iPQmFA2MijEBhtpis7ZCWftC0LZx3xGnK1ESd741hqqUaqgMeAChgjGDDLqXkgMPTJtZ3KJzDhTZpmtK2OSO5IRB6xvQDRAhOsb5Lx1lOu5ZCHV4B6RLUExvh4s+ZntHhDJAxSqs9TCDBqsc6j0iJdqtMuTROFBkIcllCCGcSytFNfm1tU8k2GRo2pOI43h9ie6tOvTJFbORyDsJFQHKD8fw+P9dWqJZ/I96TdEa5Nb1AOavjVfti0dfB+t4iXhWvyh27y9zEbRRobG7z6fgVeqSoKvB5oIMQEODx7FLvIJo55KS9R7b5ldrDReajpC+Z5z7GAHJFXn1exedVbG36ijwOmJgl0kS7lXtjD0DkLyqc70uPnSuIIwk9QCmWd+9XGnOFDzP/M5xxBInhLYBcd5z/AAZv2pOvFcS/AAAAAElFTkSuQmCC",
-                            PromotionId = 25,
+                            PromotionId = 5,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Battle in the Borough"
                         },
@@ -646,7 +646,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 12,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJGSURBVDjLzZNvLNRxHMc96qGt5z3uH3FIrEUlItel5VLtbjbcdJhwOBoiRpy1zhNNVsymKbNl0mit0hbTH0dDtRul21iju19cjuN+r760tbWVZT3pu70ffl7f9+fzeX+8AK9/kdf/AZAL8zRCX4SkNXnyDZLHkCWtZmZIK2nnJbcuRVpOTJSWzp6TXPFqafF43Jzz6DHtOkAUJAg56e2B/n4YGQGrFcbH8Tx9wlxrK/aWFuabm3E03MBmNmO7VMpC+BHnfGhY3BrgFTcboasL2tthbAyGh6GjA09+Pja9nmmdDntKCrNaLa9VKt5VV2PNykEKCLGtAfxlo+GFXFMF4jemplh/fX141GqmlUo+x8byVWgyIoK3lZVM6lKR/PfNOHYFJKzPQPS7VfT7wFNWCp2dMDMDFguyRsOcKHQIiCMmhomqKj4k6ZD89k7YdyoUv2xhRZ/q7U5O7l4tKICBARgdRRbWpagonNHRzJpMfBTFDt+gCfsOvz2/XeOSRuvtSjjT7TYW/ACIGTgPH2aptpZPmVmUN6rd+junhzbMweKJk97fYpQPl4tKkNvaWKmpwZ5toKRRLRc/zqWw9wLxt5SWDYO0cChy2/z+g9ZlQx5OgwFjU7xc9CiHpjf1NFjqSLubRGRt2PvwipAtf0yYFBjqI/odrLimciXePuXOvZ/O9SEzdS9NZN9L50BZsCv4oqLnryOrqo/CPFiNqb+c2KuRBBn9Qjd1C8IyV55fpvxZMYF5vmz6mIRlhGUUOT7sztj+E/Ad9GPLsXC6ErkAAAAASUVORK5CYII=",
-                            PromotionId = 25,
+                            PromotionId = 5,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Battle in the Borough"
                         },
@@ -654,7 +654,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 13,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHXSURBVBgZpcG/S1VxHMfh1/me41USwpa0XwTpUNToECTR4D/g0G1oiKChCAchChqiKYzCIbGWtlpuhBBBS7TY0FoUSZOVSIo/Crz3eu895/N511cQDWoQnyeRxE4kQyOVqwNn+u+u1NUpAe7IHXNDLlyOzHAJmWHu7C7ltenpuRuTY+WJrP9U/4O2js7Q3cF2dNbq9gCYyOq5Qn2lynat5Qr8kcnElfMpkCCJWqvK919feT3zinsnH/E/l0a/EQXJ+ZciL4juv7vD/M9V5pfqzC1WmZlfJTI3ooDEBiEgQYJWMyf6svCZ0bfXydoDpVLGrraMyAsjCuaG2CQ5RVFwsOMwF56fpau9CyRuvRymLU3JSoHIzYmCXCRsIbDCaDabDPSd5sjeXnoP9NGwOuXxQUppSuRuRJm7sUESLiEXa40GUx+n6NnTw+LKEqomvLj2BnfWuTtRKPKcrSTRauUsLC9wc/A27z99oLbc4PHlpyQhIaSsK/KCKMgcsUlyrDBmf8xybN9xjnaf4MlwBZKENATSJCGSO1Hm7kRCRHJRFAWNepNo/OJD/pKmRC4RJUMjlUr3of1lN8PNMTPcHctz3B2XkBsy4XLkjjvRs8mx8rlEEjsR2KHf89sagbhDhaEAAAAASUVORK5CYII=",
-                            PromotionId = 25,
+                            PromotionId = 5,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Battle in the Borough"
                         },
@@ -662,7 +662,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 14,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGXSURBVBgZBcHPi0xxAADwz3szfoxRGqzV7C6hVhwcJU6Ii5xxWBJFDuIitaX8FViExMVNIoe9IAeSH+vHJqsVOWBmlpmdNzPv++b5fKIcMLU5HMp2/xttLUrm5p+1bp5+DEQ5PhSz8ezs4LKypodKhs2E5v3o5JnfRLkPC7LrlbEBsY55P701Y70RX16U9h39E+XeXlh+cbWgLxXJJWp6lqibupceiN5szF6tKk+KbLVOoi3R1dNUNuvb/jiMrSxf8sCMr/oymUxHW+qXqt6pOOzp+2yJlo/m9HR05L6b1FSQbiuGDU11bX/l5sUSwbSb/qk5qFeI03jAiJqKIxZq6/nkqjreq0sV0x8LK+Me2WlASx9z2mIULRbE6ZOGQQes0BUEHcOWiuTWKUnfxent130SqSCV6olUlVTt8kW4HOXuXhs9tkZNQaJpXksiNaTn0fOwu0h67sWm+vbPGtYakiuoqGh4OJsdu9KJcpyvdm8M7a1oKNmhoGXay6fh5MRHohxw4nD3eLolL1ZD1g9T4VZ2Z6IL/wGvx8Nbuo22qgAAAABJRU5ErkJggg==",
-                            PromotionId = 25,
+                            PromotionId = 5,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Battle in the Borough"
                         },
@@ -670,7 +670,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 15,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIhSURBVDjLlZPrThNRFIWJicmJz6BWiYbIkYDEG0JbBiitDQgm0PuFXqSAtKXtpE2hNuoPTXwSnwtExd6w0pl2OtPlrphKLSXhx07OZM769qy19wwAGLhM1ddC184+d18QMzoq3lfsD3LZ7Y3XbE5DL6Atzuyilc5Ciyd7IHVfgNcDYTQ2tvDr5crn6uLSvX+Av2Lk36FFpSVENDe3OxDZu8apO5rROJDLo30+Nlvj5RnTlVNAKs1aCVFr7b4BPn6Cls21AWgEQlz2+Dl1h7IdA+i97A/geP65WhbmrnZZ0GIJpr6OqZqYAd5/gJpKox4Mg7pD2YoC2b0/54rJQuJZdm6Izcgma4TW1WZ0h+y8BfbyJMwBmSxkjw+VObNanp5h/adwGhaTXF4NWbLj9gEONyCmUZmd10pGgf1/vwcgOT3tUQE0DdicwIod2EmSbwsKE1P8QoDkcHPJ5YESjgBJkYQpIEZ2KEB51Y6y3ojvY+P8XEDN7uKS0w0ltA7QGCWHCxSWWpwyaCeLy0BkA7UXyyg8fIzDoWHeBaDN4tQdSvAVdU1Aok+nsNTipIEVnkywo/FHatVkBoIhnFisOBoZxcGtQd4B0GYJNZsDSiAEadUBCkstPtN3Avs2Msa+Dt9XfxoFSNYF/Bh9gP0bOqHLAm2WUF1YQskwrVFYPWkf3h1iXwbvqGfFPSGW9Eah8HSS9fuZDnS32f71m8KFY7xs/QZyu6TH2+2+FAAAAABJRU5ErkJggg==",
-                            PromotionId = 25,
+                            PromotionId = 5,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Clobberin' Time"
                         },
@@ -678,7 +678,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 16,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHOSURBVDjLpZOxa1RBEIe/d/e8FKeFEA2IGBWCICZYBSESBCFglUDSCJZaRBBbK1HQ0s4/QQlCgoKdoBA9sVBshCBETCNRiUUg5PDt7MxY7HuXdxgEycKwyzJ88/vN7Gbuzl5WDvDozeZtd66p21EzQw2iGaqGmhPVaqFodNTs/f0rI+M5gLnfmB0/MPg/le88+TLWU6BmgwDtpevgDhrBFETSORQgAQoBEbZvvUJEB2qAqg8ORw6BxRQeS0gBUkAMsPIdAIm60wNVKwEZrG+AW1JilpRotQNDQwCEOiCWgIXhe1w+f/if3hffrXMhxH4Fooa5kzdT0rNPi3TWlrl6bp7PP1d4ufqCiyNTzIzOUYiz1RWCJECjsuBA3swAmBmdoxu6APza3uDB9EM6a8sAFFEJYsRoOwBRww3yxt+Su6FLq9nqAQuxst11QDTcnX2lhc7XVO3jtw8cOzjMzafzTJ26RJUL0B7Ia020dNlsJAsTJyaZODlZziVj+swsWZb1AarJJUCMeCnn8esfaWruiIKoEtQIkry3mlUx+qfg7owd389prd6+9/7CbsvMrfaQ/O3dhdWzQa0tUZGoaDREjahxV8Dm1u/nANlev/MfAjw0JrMu09AAAAAASUVORK5CYII=",
-                            PromotionId = 25,
+                            PromotionId = 5,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Clobberin' Time"
                         },
@@ -686,7 +686,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 17,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHwSURBVDjLpZM9a1RBFIafM/fevfcmC7uQjWEjUZKAYBHEVEb/gIWFjVVSWEj6gI0/wt8gprPQykIsTP5BQLAIhBVBzRf52Gw22bk7c8YiZslugggZppuZ55z3nfdICIHrrBhg+ePaa1WZPyk0s+6KWwM1khiyhDcvns4uxQAaZOHJo4nRLMtEJPpnxY6Cd10+fNl4DpwBTqymaZrJ8uoBHfZoyTqTYzvkSRMXlP2jnG8bFYbCXWJGePlsEq8iPQmFA2MijEBhtpis7ZCWftC0LZx3xGnK1ESd741hqqUaqgMeAChgjGDDLqXkgMPTJtZ3KJzDhTZpmtK2OSO5IRB6xvQDRAhOsb5Lx1lOu5ZCHV4B6RLUExvh4s+ZntHhDJAxSqs9TCDBqsc6j0iJdqtMuTROFBkIcllCCGcSytFNfm1tU8k2GRo2pOI43h9ie6tOvTJFbORyDsJFQHKD8fw+P9dWqJZ/I96TdEa5Nb1AOavjVfti0dfB+t4iXhWvyh27y9zEbRRobG7z6fgVeqSoKvB5oIMQEODx7FLvIJo55KS9R7b5ldrDReajpC+Z5z7GAHJFXn1exedVbG36ijwOmJgl0kS7lXtjD0DkLyqc70uPnSuIIwk9QCmWd+9XGnOFDzP/M5xxBInhLYBcd5z/AAZv2pOvFcS/AAAAAElFTkSuQmCC",
-                            PromotionId = 25,
+                            PromotionId = 5,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Clobberin' Time"
                         },
@@ -694,7 +694,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 18,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIpSURBVDjLddM9aFRBFIbh98zM3WyybnYVf4KSQjBJJVZBixhRixSaShtBMKUoWomgnaCxsJdgIQSstE4nEhNREgyoZYhpkogkuMa4/3fuHIu7gpLd00wz52POMzMydu/Dy958dMwYioomIIgqDa+VnWrzebNUejY/NV6nQ8nlR4ufXt0fzm2WgxUgqBInAWdhemGbpcWNN9/XN27PPb1QbRdgjEhPqap2ZUv5+iOwvJnweT1mT5djZKjI6Ej/udz+wt1OJzAKYgWyDjJWyFghmzFsbtcY2gsTJwv09/Vc7RTgAEQgsqAKaoWsM8wu/z7a8B7vA8cHD3Fr+ktFgspO3a+vrdVfNEulJ/NT4zWngCBYY1oqSghKI465fvYwW+VAatPX07IZmF7YfrC0uDE8emPmilOFkHYiBKxAxhmSRPlZVVa2FGOU2Ad2ap4zg92MDBXJZczFmdflx05VEcAZMGIIClZASdesS2cU/dcm4sTBArNzXTcNakiCb3/HLRsn4Fo2qyXh3WqDXzUlcgYnam3Dl4Hif82dbOiyiBGstSjg4majEpl8rpCNUQUjgkia0M5GVAlBEBFUwflEv12b/Hig6SmA1iDtzhcsE6eP7LIxAchAtwNVxc1MnhprN/+lh0txErxrPZVdFdRDEEzHT6LWpTbtq+HLSDDiOm2o1uqlyOT37bIhHdKaXoL6pqhq24Dzd96/tUYGwPSBVv7atFglaFIu5KLuPxeX/xsp7aR6AAAAAElFTkSuQmCC",
-                            PromotionId = 25,
+                            PromotionId = 5,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Clobberin' Time"
                         },
@@ -702,7 +702,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 19,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJ6SURBVDjLjZO7T1NhGMY7Mji6uJgYt8bElTjof6CDg4sMSqIxJsRGB5F4TwQSIg1QKC0KWmkZEEsKtEcSxF5ohV5pKSicXqX3aqGn957z+PUEGopiGJ583/A+v3znvPkJAAjWR0VNJG0kGhKahCFhXcN3YBFfx8Kry6ym4xIzce88/fbWGY2k5WRb77UTTbWuYA9gDGg7EVmSIOF4g5T7HZKuMcSW5djWDyL0uRf0dCc8inYYxTcw9fAiCMBYB3gVj1z7gLhNTjKCqHkYP79KENC9Bq3uxrrqORzy+9D3tPAAccspVx1gWg0KbaZFbGllWFM+xrKkFQudV0CeDfJsjN4+C2nracjunoPq5VXIBrowMK4V1gG1LGyWdbZwCalsBYUyh2KFQzpXxVqkAGswD3+qBDpZwow9iYE5v26/VwfUQnnznyhvjguQYabIIpKpYD1ahI8UTT92MUSFuP5Z/9TBTgOgFrVjp3nakaG/0VmEfpX58pwzjUEquNk362s+PP8XYD/KpYTBHmRg9Wch0QX1R80dCZhYipudYQY2Auib8RmODVCa4hfUK4ngaiiLNFNFdKeCWWscXZMbWy9Unv9/gsIQU09a4pwvUeA3Uapy2C2wCKXL0DqTePLexbWPOv79E8f0UWrencZ2poxciUWZlKssB4bcHeE83NsFuMgpo2iIpMuNa1TNu4XjhggWvb+R2K3wZdLlAZl8Fd9jRb5sD+Xx0RJBx5gdom6VsMEFDyWF0WyCeSOFcDKPnRxZYTQL5Rc/nn1w4oFsBaIhC3r6FRh5erPRhYMyHdeFw4C6zkRhmijM7CnMu0AUZonCDCnRJBqSus5/ABD6Ba5CkQS8AAAAAElFTkSuQmCC",
-                            PromotionId = 25,
+                            PromotionId = 5,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Clobberin' Time"
                         },
@@ -710,7 +710,7 @@ namespace IndieWorld.Migrations
                         {
                             Id = 20,
                             Image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAI9SURBVDjLpVNfSFNRHP7u3MiHZqJCumZZamVRaSas0V40i4gKeoreIjKI3iK40GsPEpQEIRRBj/17kYKMSodlZk8rmy42mUjjLrfVnPt/77nn9jt3NSFfFH/w8f3OOfd+v3/nSIZhYD1mwTrN+s8JBoOXNU0bIBTJcoVCIZ3P5+OEL7lcLkacIg4R3sqyzFYI0Ad36UcQZI/Hc3/NGWQyGRtFHSahp2spQRoLsx/EzmzICxJA9Z7j0HUOZkKHxnQwTYdKrGlizUxWS35ECBibremyopiKGAwX4Ia51omFL/Z0zk2f9DEW+L08hRaHHZFYFq1bqjC/kMbuxiqElSXsbapGKJJCe0sNAvNJdO2qM/dEhqrKIHlnVcogg0g8ayqLAxGRiSjlUowytzfX4uDOWoz6ohiZisPCWCml7o4GHO10UK0cJ12NKKo6znqaUFA5zvc0Q0m8R0i5hYev+3Dpzml8mnls9kN65c8ajso85qJLYExEXo4qMtCIo79GUGH3obPtEJw1rfBOD2HS/wHFpBtWs8sU9dThrXgyGsa57h0rRtU3cB1nuo5Bt+g40NCLdzPP4drnxrOhYVhVjYHZOD5/T2BbvR0f/QtmhznnJaYpxBajsEkbcaLtoil4recBXn4bpLMXsBZVlghkjbr/5lvy/96BZHoR08oEvirjkHsfof/NBVRWbIAk2QxpNa/RddVx07l90w33/iNore9A6KcPE1PjiMylbkurfc4k0k90hWAniJs3OHlPkf8A2YeC/G6HEpkAAAAASUVORK5CYII=",
-                            PromotionId = 25,
+                            PromotionId = 5,
                             ShowDate = new DateTime(2023, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ShowName = "Clobberin' Time"
                         });
