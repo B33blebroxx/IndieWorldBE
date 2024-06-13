@@ -11,8 +11,8 @@
         public int RoleId { get; set; }
         public Role? Role { get; set; }
         public bool Active { get; set; }
-        public string Instagram { get; set; }
-        public string X { get; set; }
+        public string? Instagram { get; set; }
+        public string? X { get; set; }
         public ICollection<PerformerPic>? PerformerPics { get; set; }
         public ICollection<Show>? Shows { get; set; }
     }
