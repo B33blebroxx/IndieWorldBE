@@ -26,6 +26,8 @@ namespace IndieWorld.Controllers
                         Id = p.Id,
                         RingName = p.RingName,
                         Image = p.Image,
+                        Instagram = p.Instagram,
+                        X = p.X,
                         Bio = p.Bio,
                         Hometown = p.Hometown,
                         Accolades = p.Accolades,
@@ -53,6 +55,8 @@ namespace IndieWorld.Controllers
                 performer.RingName = updatedPerformer.RingName;
                 performer.Hometown = updatedPerformer.Hometown;
                 performer.Image = updatedPerformer.Image;
+                performer.Instagram = updatedPerformer.Instagram;
+                performer.X = updatedPerformer.X;
                 performer.Accolades = updatedPerformer.Accolades;
                 performer.Bio = updatedPerformer.Bio;
                 performer.RoleId = updatedPerformer.RoleId;
@@ -88,6 +92,8 @@ namespace IndieWorld.Controllers
                         RingName = p.RingName,
                         Image = p.Image,
                         Bio = p.Bio,
+                        Instagram = p.Instagram,
+                        X = p.X,
                         Hometown = p.Hometown,
                         Accolades = p.Accolades,
                         Role = p.Role.Title,
